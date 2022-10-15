@@ -231,7 +231,7 @@
     }
 
     .MovboBottom i{
-        font-size: 23px;
+        font-size: 30px;
     }
 
     .MovboBottom a {
@@ -261,8 +261,8 @@
     }
 
     .CartTabe i,.CatagorisTabe i{
-        font-size: 39px;
-        margin-top: 1rem;
+        font-size: 30px !important;
+        margin-top: 1.15rem;
     }
 
     .navbar-toggler{
