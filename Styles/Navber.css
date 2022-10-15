@@ -178,7 +178,11 @@
         margin-right: .5rem;
     }
 
-    .horizontal-menu ul li:hover{
+    .horizontal-menu ul li a{
+        color: black;
+    }
+
+    .horizontal-menu ul li a:hover{
         color: var(--TopNev);
         cursor: pointer;
     }
@@ -198,6 +202,10 @@
         .ShowInTabe{
             display: block;
         }
+    }
+
+    .ShowInTabe a{
+        color: white;
     }
 
     .MoboTop{
@@ -226,10 +234,13 @@
         font-size: 23px;
     }
 
-    .MovboBottom i:hover{
-        color: var(--DestopCatagori);
+    .MovboBottom a {
+        color: black;
     }
 
+    .MovboBottom a:hover{
+        color: var(--DestopCatagori);
+    }
 
     .LogoTabe{
         text-align: center;
@@ -250,8 +261,93 @@
     }
 
     .CartTabe i,.CatagorisTabe i{
-        font-size: 30px;
-        margin-top: 1.2rem;
+        font-size: 39px;
+        margin-top: 1rem;
+    }
+
+    .navbar-toggler{
+        padding: 0;
+        background-color: transparent;
+        border: 0px solid transparent;
+        border-radius: 0;
+        color: white;
+    }
+
+    .navbar-toggler:focus{
+        padding: 0;
+        bottom: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .NavCaragoris{
+        position: fixed;
+        left: 0;
+        top: 0px;
+        background-color: rgb(237 237 237);
+        width: 60%;
+        color: rgb(15, 15, 15) !important ;
+        padding: 0.5rem 0.5rem;
+        height: 100%;
+        overflow: scroll;
+        z-index: 10;
+    }
+
+    .nav-link{
+        color: black !important;
+        padding: .1rem 0rem;
+    }
+
+    .nav-link.nav-link:hover{
+        background-color: var(--navmidbg);
+    }
+
+    .navbar{
+        padding-top: 0;
+    }
+
+    .MobileMwnuTitle{
+        width: 100%;
+        background-color: var(--navmidbg);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .NavCaragoris ul li{
+        padding: 6px;
+    }
+
+    .NavCaragoris ul li i{
+        font-size: 24px;
+        color: white;
+    }
+
+    .nav-item{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav-item:not(:last-child){
+        border-bottom: 1px solid #c5c4c4;
+    }
+
+    .nav-item img{
+        height: 22px;
+        width: 20px;
+        margin-right: .2rem ;
+    }
+
+    .nav-item span{
+        background: #cdcdcd;
+        padding: 2px 4px;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    
+    .active{
+        color: var(--TopNev) !important;
     }
 /* nav for tabe and mobile end */
 
