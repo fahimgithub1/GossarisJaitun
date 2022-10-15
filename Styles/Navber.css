@@ -1,0 +1,265 @@
+
+/* Top Nevber start */
+    .TopNev{
+        display: flex;
+        flex-wrap: wrap;
+        padding: .3rem 0;
+        background-color: var(--TopNev);
+        color: var(--navColor);
+    }
+
+    .TopNev li{
+        font-size: 13px;
+        margin-right: 0.4rem;
+    }
+
+    .TopNev li:hover, 
+    .ContactDiv ul li a:hover{
+        color: white;
+        cursor: pointer;
+    }
+    
+
+    .TopNev ul li .icon{
+        color: var(--navIconColor);
+        font-size: 13px;
+    }
+
+    .ContactDiv{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .ContactDiv ul li a{
+        color: var(--navColor);
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .ContactDiv ul li a i{
+        width: 22px;
+        height: 22px;
+        text-align: center;
+        padding: 5px;
+        border-radius: 50%;
+    }
+
+    .ContactDiv ul li a i:hover {
+        background-color: red;
+    }
+
+    .Youtube i {
+        width: 28px !important;
+    }
+/* Top Nevber end */
+
+/* Mid NevBer start */
+    .MidNev{
+        background-color: var(--navmidbg);
+        color: white;
+        padding: 5px 0;
+    }
+    
+    .MidNev img{
+       height:  auto;
+       /* max-height: 127px; */
+       width:120%;
+    }
+
+    .Serchber{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Serchber form{
+        width: 93%;
+    }
+
+    input{
+        width: 100%;
+        outline: none;
+        height: 40px;
+        padding: 10px;
+        font-size: 14px;
+        font-weight: 200;
+        border-radius: 5px;
+        border-radius: 6px;
+        border: none;
+    }
+
+    input:focus,input:hover{
+        outline: none;
+    }
+
+    .SelectedIocn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .IconDiv{
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .IconDiv:not(:last-child){
+        margin-right: .5rem;
+    }
+
+    .IconDiv p{
+        margin-bottom: 0 ;
+        font-size: 12px;
+    }
+
+    .IconDiv i{
+        font-size: 26px;
+        margin-right: 0.4rem;
+    }
+
+    .IconDiv a{
+        color: rgb(255, 255, 255);
+    }
+
+    .Count{
+        background: red;
+        width: 29px;
+        height: 18px;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    .Serchber form{
+        position: relative;
+    }
+
+    .Serchber label{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: var(--TopNev);
+        height: 40px;
+        width: 50px;
+        padding-top: 8px;
+        border-radius: 0 7px 7px 0;
+        text-align: center;
+    }
+/* Mid NevBer end */
+
+/* Bootom Navbar start*/
+    .BottomNev{
+        border-bottom: 2px solid var(--navmidbg);
+    }
+
+    .DestopNavCtagoris{
+        background-color: var(--DestopCatagori);
+        justify-content: space-between;
+        padding: 10px 12px;
+        color: white;
+        font-weight: 500;
+    }
+
+    .DestopNavCtagoris i{
+        float: right;
+        font-size: 24px;
+        /* cursor: pointer; */
+    }
+
+    .horizontal-menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .horizontal-menu ul li{
+        margin-right: .5rem;
+    }
+
+    .horizontal-menu ul li:hover{
+        color: var(--TopNev);
+        cursor: pointer;
+    }
+
+    .ShowInTabe{
+        display: none;
+    }
+
+/* Bootom Navbar start*/
+
+/* nav for tabe and mobile start */
+    @media screen and (max-width: 1023px) {
+        .hideOnPhone{
+            display: none;
+        }
+
+        .ShowInTabe{
+            display: block;
+        }
+    }
+
+    .MoboTop{
+        background-color: var(--navmidbg);
+        color: white;
+        padding: 5px 0;
+    }
+
+    .MovboBottom{
+        padding: 8px 18px;
+        background-color: rgb(212, 211, 211);
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+
+    .MovboBottom .container{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .MovboBottom i{
+        font-size: 23px;
+    }
+
+    .MovboBottom i:hover{
+        color: var(--DestopCatagori);
+    }
+
+
+    .LogoTabe{
+        text-align: center;
+    }
+
+    .LogoTabe img{
+        height: 70px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .CatagorisTabe i{
+        float: left;
+    }
+
+    .CartTabe i{
+        float: right;
+    }
+
+    .CartTabe i,.CatagorisTabe i{
+        font-size: 30px;
+        margin-top: 1.2rem;
+    }
+/* nav for tabe and mobile end */
+
+/* colro varible */
+:root {
+    --navColor: rgb(216, 216, 216);
+    --navIconColor: red;
+    --navmidbg: #75b535;
+    --TopNev: #31560b;
+    --DestopCatagori: #3e6a10;
+}
