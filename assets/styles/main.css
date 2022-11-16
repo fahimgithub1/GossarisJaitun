@@ -20,6 +20,10 @@ body{
     padding-right: 30px;
 }
 
+.SectionPadding{
+    padding-top: 50px;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -39,6 +43,44 @@ ul li{
     display: inline;
 }
 
+button{
+    background: var(--logoColor-2);
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 32px;
+}
+
+/* Scroll */
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black;
+    transition: all .5s; 
+    border-radius: 12px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2c66af;
+    transition: all .5s;
+  }
+
+/* Scroll */
+
 /* navigatin stat */
 nav{
     position: fixed;
@@ -53,14 +95,13 @@ nav{
     display: flex;
     flex-wrap: wrap;
     padding: .3rem 0;
-    background-color: var(--TopNev);
-    color: var(--navColor);
+    background-color: var(--logoColor-1);
+    color: white;
 }
 
 .TopNev li{
     font-size: 13px;
     margin-right: 0.4rem;
-    font-weight: bold;
 }
 
 .TopNev li:hover, 
@@ -70,7 +111,7 @@ nav{
 }
 
 .TopNev ul li .icon{
-    color: var(--logoColor-2);
+    color: white;
     font-size: 13px;
 }
 
@@ -85,9 +126,10 @@ nav{
 }
 
 .ContactDiv ul li a{
-    color: var(--navColor);
+    color: white;
     text-decoration: none;
     text-align: center;
+    font-weight: bold;
 }
 
 .ContactDiv ul li a i{
@@ -125,21 +167,19 @@ nav{
 
 /* Mid NevBer start */
 .MidNev{
-    background-color: var(--navColor);
     color: black;
-    padding: 12px 0;
+    padding: 6px 0;
+    background-color: white;
+}
+
+.logo a{
+    display: flex;
+    justify-content: center;
 }
 
 .MidNev img{
    height:  auto;
-   width: 100%;
-}
-
-@media screen and (min-width: 1024px) {
-    .MidNev img{
-        height: 57px;
-        max-height: 57px !important;
-    }
+   width: 43%;
 }
 
 .Serchber{
@@ -163,6 +203,7 @@ input{
     border-radius: 6px;
     border: none;
     float: right;
+    border: 1px solid #920d03;
 }
 
 input:focus,input:hover{
@@ -173,13 +214,13 @@ input:focus,input:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: end;
     padding-left: 2.5%;
 }
 
 .IconDiv{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     color: black;
     font-weight: bolder;
@@ -224,7 +265,7 @@ input:focus,input:hover{
     position: absolute;
     top: 0;
     right: 0;
-    background-color: var(--TopNev);
+    background-color: var(--logoColor-1);
     height: 40px;
     width: 50px;
     padding-top: 8px;
@@ -341,8 +382,8 @@ input:focus,input:hover{
 
 /* Bootom Navbar start*/
 .BottomNev{
-    border-bottom: 2px solid var(--navColor);
-    background-color: white;
+    /* border-bottom: 2px solid var(--logoColor-2); */
+    background-color: var(--logoColor-2) !important;
 }
 
 .DestopNavCtagoris{
@@ -361,6 +402,7 @@ input:focus,input:hover{
 .horizontal-menu {
     display: flex;
     align-items: center;
+    background-color: var(--logoColor-2);
 }
 
 .horizontal-menu ul li{
@@ -369,7 +411,7 @@ input:focus,input:hover{
 }
 
 .horizontal-menu ul li a{
-    color: #3e3e3e;
+    color: #ffffff !important;
 }
 
 .horizontal-menu ul li a:hover{
@@ -386,10 +428,6 @@ input:focus,input:hover{
     top: 50PX;
 }
 
-.CatagorisIcinHide{
-    /* display: none; */
-}
-
 .DestopNavCtagoris{
     position: relative !important;
 }
@@ -402,8 +440,10 @@ input:focus,input:hover{
     background-color: white;
     box-shadow: 0 0 5px #a79f9f;
     width: 215px;
-    padding: 5px;
+    padding: 8px 0;
     font-weight: 500;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .CatagorisIcinHideCros{
@@ -411,30 +451,20 @@ input:focus,input:hover{
 }
 /* Bootom Navbar end*/
 
-/* nav for tabe and mobile start */
-@media screen and (max-width: 1023px) {
-    .hideOnPhone{
-        display: none;
-    }
-
-    .ShowInTabe{
-        display: block;
-    }
-}
 
 .ShowInTabe a{
     color: white;
 }
 
 .MoboTop{
-    background-color: var(--navColor);
+    background-color: var(--logoColor-1);
     color: white;
     padding: 5px 0;
 }
 
 .MovboBottom{
     padding: 8px 18px;
-    background-color: rgb(212, 211, 211);
+    background-color: var(--logoColor-1);
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -450,10 +480,11 @@ input:focus,input:hover{
 
 .MovboBottom i{
     font-size: 30px;
+    color: white;
 }
 
 .MovboBottom a {
-    color: black;
+    color: white;
 }
 
 .MovboBottom a:hover{
@@ -468,6 +499,10 @@ input:focus,input:hover{
     height: 70px;
     margin: auto;
     text-align: center;
+    box-shadow: 0 0 5px white;
+    border-radius: 4px;
+    padding: 2px;
+    overflow: hidden;
 }
 
 .CatagorisTabe i{
@@ -478,10 +513,16 @@ input:focus,input:hover{
     float: right;
 }
 
-.CartTabe i,.CatagorisTabe i{
+.CartTabe i,
+.CatagorisTabe i{
     font-size: 32px !important;
     margin-top: 20px;
     color: var(--logoColor-1);
+}
+
+.MoboTop .CatagorisTabe i, 
+.MoboTop  .CartTabe i{
+    color: white;
 }
 
 .navbar-toggler{
@@ -560,7 +601,7 @@ input:focus,input:hover{
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
-    padding: 5px 20px;
+    padding: 5px 25px;
 }
 
 .nav-item:hover{
@@ -589,7 +630,7 @@ input:focus,input:hover{
 }
 
 .nav-item:not(:last-child){
-    border-bottom: 1px solid #c5c4c4;
+    border-bottom: 1px solid var(--logoColor-1);
 }
 
 .nav-item img{
@@ -734,13 +775,168 @@ input:focus,input:hover{
     opacity: 1;
     visibility: visible;
 }
-/* Copy form templet end */
+/* nav end */
 
+/* heros start */
+.HerosSection{
+    margin-top: 179px;
+    overflow: hidden;
+    padding-top: 20px;
+}
 
+.HerosSection img{
+    width: 100%;
+}
+
+.carousel{
+    border: 1px solid var(--logoColor-1);
+    padding: 0;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target],
+.carousel-indicators [data-bs-target]{
+    width: 15px;
+    border-radius: 50%;
+    height: 15px;
+    background-color: var(--logoColor-2);
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 65px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 3rem;
+    height: 3rem;
+    background: #920d03;
+    color: white;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.carousel-caption {
+    position: absolute;
+    left: 0%;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.249);
+}
+
+.HerosText{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.HerosTextunder{
+    padding: 20px;
+    color: white;
+    max-width: 508px;
+}
+
+.HerosTextunder h5{
+    font-size: 55px;
+    text-transform: capitalize;
+}
+
+.HerosTextunder p{
+    font-size: 55px;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    color: #f48326;
+}
+
+.HerosTextunder button{
+    box-shadow: 0 0 5px #585858;
+    padding: 10px 32px;
+}
+/* carusle end */
+
+/* start */
+.Titelh4{
+    font-size: 54px ;
+    margin-bottom: 0;
+    margin-bottom: 30px;
+}
+
+.owl-item{
+    padding: 5px;
+}
+
+.owl-item .item{
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 2px rgb(207, 207, 207);
+    height: 142px;
+    width: 160px;
+}
+
+.owl-item .item img{
+    height: 100%;
+    width: 100%;
+}
+
+/* responsive start */
+@media screen and (max-width: 1200px) {
+    .lovehide{
+        display: none;
+    }
+
+    .IconDiv{
+        margin-right: 1.5rem !important;
+    }
+
+    .HerosSection {
+        margin-top: 160px;
+    }
+}
+
+/* nav for tabe and mobile start */
+@media screen and (max-width: 1023px) {
+    .hideOnPhone{
+        display: none;
+    }
+
+    .ShowInTabe{
+        display: block;
+    }
+
+    .HerosSection{
+        margin-top: 81px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* .MidNev img{
+        height: 57px;
+        max-height: 57px !important;
+    } */
+}
+
+@media screen and (max-width: 767px) {
+    .SectionPadding{
+        padding-top: 20px;
+    }
+
+    .Titelh4 {
+        margin-bottom: 15px;
+    }
+}
 
 :root {
-    --logoColor-1: #2c66af;
-    --logoColor-2: #ff863f;
+    --logoColor-1: rgb(146 13 3);
+    --logoColor-2: #de7d2d;
     --servocehover: #e79855;
     --navColor: rgb(216, 216, 216);
     --navIconColor: red;
