@@ -1045,6 +1045,7 @@ input:focus,input:hover{
         justify-content: space-between;
         padding: 0 10px;
         font-size: 20px;
+        color: black;
     }
 
     .Incement .Plus,
@@ -1100,15 +1101,6 @@ input:focus,input:hover{
 /* add banner end */
 
 /* last week section start */
-/* .LestWeekBG{
-    background-color: #f1f1f1;
-    pad
-} */
-
-.LastWeekText{
-
-}
-
 .LastWeekText .WeeKPara1{
     text-transform: uppercase;
     display: inline;
@@ -1169,15 +1161,11 @@ input:focus,input:hover{
     right: 0;
     color: var(--logoColor-1);
 }
-.LastWeekProducr.owl-theme .owl-dots .owl-dot span{
-    /* position: absolute;
-    top: -32px;
-    right: 5px; */
-    /* background-color: var(--logoColor-1); */
-}
+
 .owl-carousel .owl-nav button.owl-prev{
     margin-right: 1rem !important;
 }
+
 .owl-theme .owl-nav [class*=owl-] {
     color: #FFF;
     font-size: 44px !important;
@@ -1188,6 +1176,7 @@ input:focus,input:hover{
     cursor: pointer;
     border-radius: 3px;
 }
+
 .owl-theme .owl-nav [class*=owl-]:hover {
     background: none;
     color: var(--logoColor-2);
@@ -1247,10 +1236,6 @@ input:focus,input:hover{
     .BannerPadding{
         padding-top: 30px;
     }
-
-    /* .PddingMannage{
-        padding-bottom: 20px ;
-    } */
 }
 
 /* nav for tabe and mobile start */
@@ -1291,6 +1276,17 @@ input:focus,input:hover{
     .ProductContiner{
         padding: 0;
     }
+
+    .HerosTextunder h5{
+        font-size: 40px;
+        text-transform: capitalize;
+    }
+
+   .HerosTextunder button {
+       box-shadow: 0 0 5px #585858;
+       padding: 8px 24px;
+       font-size: 16px;
+   }
 }
 
 @media screen and (max-width: 767px) {
@@ -1327,6 +1323,40 @@ input:focus,input:hover{
     .LastWeekProducr{
         margin-top: 20px;
     }
+
+    .HerosTextunder p {
+        font-size: 55px;
+        font-size: 11px;
+    }
+
+    .HerosTextunder h5 {
+        font-size: 19px;
+    }
+
+    .HerosTextunder button {
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 2rem;
+        height: 2rem;
+        padding: 3px;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        width: 37px;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 0rem;
+    }
+
+    .carousel-dark .carousel-indicators [data-bs-target], 
+    .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 10px;
+    }
 }
 
 @media screen and (max-width: 1023px) and (min-width: 685px){
@@ -1351,7 +1381,7 @@ input:focus,input:hover{
     }
 
     .ProductBtnIncement button {
-        font-size: 10px;
+        font-size: 12px;
         padding: 5px 12px;
         margin-bottom: 12px;
     }
