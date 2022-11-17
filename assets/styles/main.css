@@ -1256,6 +1256,46 @@ input:focus,input:hover{
 }
 /* Latest news end */
 
+/* Footer start */
+.FristFooter img{
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+footer{
+    padding-bottom: 40px;
+    background-color: rgb(33, 33, 33);
+    color: white;
+}
+
+footer ul{
+    margin: 0;
+    padding: 0;
+    color: #bbbbbb;
+}
+
+footer ul a{
+    color: #bbbbbb;
+}
+
+footer ul li{
+    margin: 0;
+    padding: 4px 0;
+    display: block;
+}
+
+.SocilaIcon li{
+    display: inline;
+    margin-right: .5rem;
+    text-align: center;
+    /* border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    padding: 3px; */
+    font-size: 19px;
+}
+
 /* responsive start */
 @media screen and (min-width: 1200px) {
     .Compute-20{
