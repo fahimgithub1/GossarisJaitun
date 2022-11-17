@@ -939,7 +939,7 @@ input:focus,input:hover{
 
     .Categorieitem p{
         font-weight: 700;
-        font-size: 15px;
+        font-size: 13px;
         margin: 0;
     }
 /* Categories section end */
@@ -961,13 +961,15 @@ input:focus,input:hover{
     }
 
     .CatagorySection{
-        background-color: #f1f1f1;
+        /* background-color: #f1f1f1; */
+        background-color: var(--section-bg);
         border-radius: 7px;
-        padding: 40px 15px;
+        padding: 40px 20px;
     }
 
     .FoductList{
         padding: 7px;
+        padding-bottom: 0;
     }
 
     .Product{
@@ -1088,13 +1090,12 @@ input:focus,input:hover{
 .BannerImage{
     height: 180px;
     overflow: hidden;
-    border: 7px;
-    width: 100%;
     border-radius: 10px;
 }
 
 .BannerImage img{
     width: 100%;
+    height: 100%;
 }
 /* responsive start */
 @media screen and (min-width: 1200px) {
@@ -1123,9 +1124,13 @@ input:focus,input:hover{
         padding-bottom: 20px;
     }
 
-    .PddingMannage{
-        padding-bottom: 20px ;
+    .BannerPadding{
+        padding-top: 30px;
     }
+
+    /* .PddingMannage{
+        padding-bottom: 20px ;
+    } */
 }
 
 /* nav for tabe and mobile start */
@@ -1141,9 +1146,7 @@ input:focus,input:hover{
     .HerosSection{
         margin-top: 81px;
     }
-}
 
-@media screen and (max-width: 1023px) {
     .Categorieitem{
         width: 20%;
     }
@@ -1156,15 +1159,8 @@ input:focus,input:hover{
         margin-bottom: 15px;
     }
 
-}
-
-@media screen and (max-width: 767px) {
-    .SectionPadding{
-        padding-top: 20px;
-    }
-
-    .Titelh4 {
-        margin-bottom: 12px;
+    .BannerPadding{
+        padding-top: 10px;
     }
 
     .container {
@@ -1172,8 +1168,40 @@ input:focus,input:hover{
         padding-right: 20px;
     }
 
+    .ProductContiner{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .SectionPadding{
+        padding-top: 20px;
+    }
+
+    .CatagorySection {
+        padding-top: 20px;
+    }
+
+    .Titelh4 {
+        margin-bottom: 12px;
+    }
+
     .BannerImage{
         height: 110px;
+    }
+
+    .BannerPadding {
+        padding-top: 10px;
+    }
+
+    .BannerDiv{
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+
+    .BannerImage{
+        margin-bottom: 20px;
+        padding: 0 !important;
     }
 }
 
@@ -1191,6 +1219,35 @@ input:focus,input:hover{
     .Categorieitem{
         width: 33.33%;
     }
+
+    .moibe-50{
+        width: 50%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .ProductBtnIncement button {
+        font-size: 10px;
+        padding: 5px 12px;
+        margin-bottom: 12px;
+    }
+
+    .Titelh4 h4 {
+        font-size: 24px !important;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .ProductImg {
+        height: 150px;
+    }
+
+    .BannerDiv{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media screen and (max-width: 599px) {
@@ -1200,6 +1257,7 @@ input:focus,input:hover{
 }
 
 :root {
+    --section-bg: #ffecea;
     --logoColor-1: rgb(146 13 3);
     --logoColor-2: #de7d2d;
     --servocehover: #e79855;
