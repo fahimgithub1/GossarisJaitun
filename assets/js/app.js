@@ -31,7 +31,7 @@ window.addEventListener('scroll', () => {
     let MidNev = document.querySelector('.MidNev');
     let BottomNev = document.querySelector('.BottomNev');
 
-    if (window.scrollY > 300) {
+    if (window.scrollY > 100) {
         TopNev.style.display = 'none';
         MidNev.style.display = 'none';
         BottomNev.style.background = "rgba(216,216,216,1)";

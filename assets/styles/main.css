@@ -867,7 +867,7 @@ input:focus,input:hover{
 .Titelh4{
     margin-bottom: 0;
     margin-bottom: 30px;
-    color: #920d3b;
+    color: var(--logoColor-1);
 }
 
 .Titelh4 h4{
@@ -970,6 +970,10 @@ input:focus,input:hover{
     .FoductList{
         padding: 7px;
         padding-bottom: 0;
+    }
+
+    .PerProductPadding{
+        padding: 0px 7px;
     }
 
     .Product{
@@ -1257,9 +1261,17 @@ input:focus,input:hover{
 /* Latest news end */
 
 /* Footer start */
+footer{
+    margin-top: 40px;
+}
+
+.FristFooter{
+    /* justify-content: center; */
+}
+
 .FristFooter img{
-    width: 100px;
-    margin-bottom: 20px;
+    width: 120px;
+    margin-bottom: 10px;
 }
 
 footer{
@@ -1295,8 +1307,309 @@ footer ul li{
     padding: 3px; */
     font-size: 19px;
 }
+/* footer end */
+
+/* product page start */
+.mainProdictDiv{
+    /* height: min-content; */
+}
+.ProductBg{
+    height: 550px;
+    width: 100%;
+    /* background-color: red; */
+    background-image: url(../images/procuctbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+.BgBlack{
+    position: absolute;
+    height: 550px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0.479);
+    overflow: visible;
+}
+.ProductBg h1{
+    /* margin-top: 20px; */
+    max-width: 425px;
+    margin: auto;
+    text-align: center;
+    color: var(--logoColor-2);
+    color: white;
+    padding: 10px;
+    font-size: 34px;
+    padding-top: 40px;
+}
+
+/* .mainProdictDiv{
+    height: auto;
+    position: relative ;
+    overflow: visible;
+} */
+
+.ProductDaitlesdiv{
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    top: 400px;
+    left: 10%;
+    background-color: var(--section-bg);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: rgb(207 207 207) 0px 0px 5px;
+}
+
+.ProductDaitlesdiv img{
+    border-radius: 9px;
+}
+
+.PriceP{
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--logoColor-1);
+    margin-bottom: 1rem !important;
+}
+
+.PriceP span{
+    margin-left: .3rem;
+    color: rgb(79, 79, 79);
+}
+
+.SmalDisciption{
+    font-size: 20px;
+    color: rgb(52, 52, 52);
+    margin-bottom: 1.2rem !important;
+    height: 150px;
+    overflow: hidden;
+}
+
+.ProductBtn button{
+    font-weight: 400 !important;
+    background-color: var(--logoColor-1);
+    width: 200px;
+}
+
+.ProductBtn button:hover{
+    background-color: var(--logoColor-2);
+}
+
+.ProductBtn button i{
+    margin-right: .5rem;
+}
+
+.ProductBtn button:not(:last-child){
+    margin-right: 1rem;
+}
+
+.CataTagId {
+    margin-bottom: 1.2rem;
+}
+
+.CataTagId p {
+    margin-bottom: .5rem;
+}
+
+.CataTagId p span{
+    font-weight: 600;
+}
+
+.RightSide .ProductBtnIncement{
+    justify-content: left !important;
+    width: 200px;
+    margin-bottom: 1.2rem;
+}
+
+.RightSide .Incement{
+    width: 200px;
+}
+
+    /* tabe review and disciption start */
+    .ReviewAndDis{
+        margin-top: 30px;
+    }
+
+    .nav-tabs li,
+    .nav-tabs li button{
+        width: 150px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .nav-tabs .nav-item{
+        background: none;
+        border: none;
+        margin-right: .5rem;
+        padding: 0;
+        bottom: none;
+    }
+
+    .nav-tabs li button{
+        padding: 6px 30px;
+        font-size: 20px;
+        background: none !important;
+        border-radius: 15px 15px 0 0  !important;
+    }
+
+    .nav-tabs li button:hover{
+        background: var(--logoColor-2) !important;
+    }
+
+    .nav-tabs li:hover{
+        background: none;
+    }
+    
+    .nav-tabs li .active{
+        color: white !important;
+        border: none;
+        background: var(--logoColor-2) !important;
+    }
+    
+    .nav-tabs li .active button{
+        background: var(--logoColor-2) !important;
+    }
+    
+    .tab-content .tab-pane{
+        padding: 20px ;
+        border-radius: 10px;
+        height: 450px;
+        border-top: 1px solid rgb(219, 213, 213);
+    }
+
+    .tab-content .active{
+        color: rgb(4, 4, 4) !important;
+        background-color: #ffc18c;
+    }
+
+    .Disciption{
+        font-size: 19px;
+    }
+
+    .ReviewDiv label,
+    .ReviewDiv input{
+        display: block !important;
+        width: 100%;
+        text-align: left !important;
+    }
+
+    .ReviewDiv label{
+        margin-bottom: .5rem;
+        font-weight: 600;
+    }
+
+    .ReviewDiv input{
+        margin-bottom: .5rem;
+    }
+
+    .ReviewDiv textarea{
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px;
+        outline: none;
+        border: 1px solid var(--logoColor-1);
+    }
+
+    .ReviewDiv h4{
+        text-align: left;
+    }
+
+    .PatingDiv p{
+        font-weight: 600;
+        margin-bottom: .2rem;
+        text-align: left;
+    }
+
+    .PatingDiv ul {
+        text-align: left;
+    }
+
+    .PatingDiv ul i{
+        color: var(--logoColor-2);
+        margin-right: .3rem;
+        margin-bottom: .5rem;
+    }
+
+    .ReviewDiv button{
+        background-color: var(--logoColor-1) !important;
+        margin: auto;
+        font-weight: 500;
+        margin-top: .5rem;
+    }
+
+    .ReviewDiv button:hover{
+        background-color: var(--logoColor-2) !important;
+    }
+
+    .PersonReview{
+        display: flex;
+    }
+
+    .PersonImg{
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
+        overflow: hidden;
+        padding: 0;
+        margin-right: .7rem;
+    }
+
+    .PersonImg img{
+        height: 60px !important;
+        width: 60px !important;
+    }
+
+    .PersonReview .perosName{
+        font-size: 16px;
+        font-weight: 600;
+        text-align: left;
+        margin-bottom: .3rem;
+    }
+
+    .PersonReview .pesonReview{
+        text-align: left !important;
+    }
+
+    .PersonReview .PatingDiv i{
+        margin-right: 0;
+        font-size: 14px;
+    }
+    /* tabe review and disciption end */
+
+    /* reated product section start */
+    .RelatedProdSec{
+        margin-top: 660px;
+    }
+    /* reated product section end */
+
+    /* banner start */
+    .BannerEihttext{
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .BannerEihttext .HerosTextunder{
+        text-align: center;
+    }
+
+    .BannerEihttext .HerosText{
+        justify-content: right;
+        padding-right: 5%;
+    }
+    /* banner end */
+/* product page end */
 
 /* responsive start */
+@media screen and (min-width: 1400px) {
+    .ProductDaitlesdiv{
+        left: calc((100% - 1200px)/2);
+    }
+}
 @media screen and (min-width: 1200px) {
     .Compute-20{
         width: 20%;
@@ -1381,6 +1694,18 @@ footer ul li{
        padding: 8px 24px;
        font-size: 16px;
    }
+
+   footer{
+        margin-top: 250px;
+   }
+
+    footer ul{
+        margin-bottom: 20px;
+    }
+
+    .RelatedProdSec{
+        margin-top: 760px !important;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -1455,6 +1780,10 @@ footer ul li{
     .LatestNews h4{
         font-size: 18px !important;
     }
+
+    footer{
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 1023px) and (min-width: 685px){
@@ -1465,6 +1794,7 @@ footer ul li{
     .CatagoriPadding{
         margin-top: 0;
     }
+    
 }
 
 @media screen and (max-width: 685px) {
@@ -1495,7 +1825,6 @@ footer ul li{
 }
 
 @media screen and (max-width: 575px) {
-
     .ProductImg {
         height: 150px;
     }
@@ -1504,6 +1833,7 @@ footer ul li{
         padding-left: 0;
         padding-right: 0;
     }
+
 }
 
 @media screen and (max-width: 599px) {
