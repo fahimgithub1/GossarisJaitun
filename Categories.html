@@ -12,7 +12,7 @@
 
         <!-- google fronts -->
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        
+
         <!-- bootstrap file link -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
@@ -501,178 +501,389 @@
         </nav>
         <!-- Navber End -->
 
-        <!-- Heros start -->
-        <section class="HerosSection container">
+        <!-- main section start -->
+        <section class="HerosSection CampaignsSection container">
             <div class="row">
-                <div class="mainProdictDiv">
-                    <div class="ProductBg">
-                        <div class="BgBlack">
-                            <!-- Product Name -->
-                            <h1>Grand Old Parr Blended Scotch Whisky</h1>
+                <div class="ShowCatagoritStapes">
+                    <ul>
+                        <li><a href="#"> Real Estate Products</a></li>
+                        <li> > <a href="#"> Light</a></li>
+                        <li> > <a href="#"> White Light</a></li>
+                    </ul>
+                </div>
+                    
+                <div class="AllProductImg row rowMargincont">
+                    <div>
+                        <img src="./assets/images/carosul/carosul img2.webp" alt="">
+                    </div>
+                </div>
+
+                <div class="row MainCatagoriDiv rowMargincont">
+                    <!-- catagoris and brand menu start -->
+                    <div class="col-lg-3 col-md-0 col-sm-0 Catagori">
+                        <div class="Catagori2">
+                            <h5>FILTER PRODUCTS BY</h5>
+                            <div class="Catagori3">
+                                <span class="TaiterSpan">CATEGORY</span>
+                                <a href="#">Hair Brushes & Combs (2)</a>
+                            </div>
+
+                            <div class="Catagori3">
+                                <span class="TaiterSpan">Price</span>
+                                <div class="priceLabel"> <span class="pricelavel1"></span> <span class="pricelavel2"></span></div>
+                                <div class="priceInput">
+                                    <span>TK </span> <input type="text" value="257"> - 
+                                    <span>TK </span> <input type="text" value="1000">
+                                </div>
+                            </div>
+                            
+                            <div class="Catagori3">
+                                <span class="TaiterSpan">PRODUCT TYPE</span>
+                                <a href="#">Unassigned (1)</a>
+                                <a href="#">Hair Brushs (1)</a>
+                                <a href="#">Razor (1)</a>
+                            </div>
+                            
+                            <div class="Catagori3">
+                                <span class="TaiterSpan">BRAND NAME</span>
+                                <a href="#">Unassigned (1)</a>
+                                <a href="#">Hair Brushs (1)</a>
+                                <a href="#">Razor (1)</a>
+                            </div>
+                            
+                            <div class="Catagori3">
+                                <span class="TaiterSpan">Location</span>
+                                <a href="#">Bangladesh</a>
+                                <a href="#">china</a>
+                            </div>
+                            
+                            <div class="Catagori3">
+                                <span class="TaiterSpan">Warranty</span>
+                                <a href="#">Yes</a>
+                                <a href="#">No</a>
+                            </div>
                         </div>
                     </div>
+                    <!-- catagoris and brand menu end -->
 
-                    <div class="ProductDaitlesdiv">
-                        <div class="row">
-                            <div class="col-lg-5 col-md-5 PeoudctBigImgage">
-                                <img src="./assets/images/Cooking-Essential/Rice.jpg" alt="">
+                    <!-- Product view and filter result start -->
+                    <div class="col-lg-9 col-md-12 col-sm-12 AllProduct">
+                        <!-- Filtering ptoduct acroding to populer type -->
+                        <div class="CtagorisFilter">
+                            <div class="ShortIcon">
+                                <!-- <span><i class="fa-sharp fa-solid fa-grid"></i></span>
+                                <span><i class="fa fa-bars"></i></span> -->
+                                <span class="DisNoneinPhone">58 Items Available</span>
+                                <span class="CatagoriFilter showInphone">Filter</span>
                             </div>
 
-                            <div class="col-lg-7 col-md-7 RightSide">
-                                <p  class="PriceP"> 200Tk <span class="discount">250TK</span></p>
-                                <p class="SmalDisciption">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit in quos quo odit possimus, voluptates deserunt sunt iusto perferendis consequuntur tempora provident maiores asperiores voluptas laborum ipsum molestiae aliquid ea!</p>
-                            
-                                <div class="CataTagId">
-                                    <p class="Category"><span>Category:</span> Alcohol</p>
-                                    <p class="Category"><span>Tag:</span> premium Quality</p>
-                                    <p class="Category"><span>PRoduct ID:</span> 2215</p>
-                                </div>
-    
-                                <div class="ProductBtnIncement text-center">
-                                    <div class="Incement">
-                                        <span class="Plus">+</span>
-                                        <span>1</span>
-                                        <span class="Minnus">-</span>
-                                    </div>
-                                </div>
-
-                                <div class="ProductBtn">
-                                    <button class="CartBtn"><i class="fa fa-cart-shopping"></i> Add To Cart</button>
-                                    <button><i class="fa fa-bag-shopping"></i> Buy Now</button>
+                            <div class="ShortBy">
+                                <div>
+                                    <span>Short By</span>
+                                    <select>
+                                        <option value="0">Prositon</option>
+                                        <option value="1">Product Name</option>
+                                        <option value="2">Price</option>
+                                        <option value="3">Pupoler Product</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
+                        <!-- Filtering ptoduct acroding to populer type -->
 
-                        <!-- Review and disciption -->
-                        <div class="ReviewAndDis">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
-                                        Desciption
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
-                                        Review
-                                    </button>
-                                </li>
-                            </ul>
-
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane Disciption fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                                    11Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, officiis nostrum? Eos aut ipsam nemo similique? Non laboriosam culpa deserunt dolor, error ut beatae pariatur sequi facilis! Eos, aliquid dolorem?
-                                    11Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, officiis nostrum? Eos aut ipsam nemo similique? Non laboriosam culpa deserunt dolor, error ut beatae pariatur sequi facilis! Eos, aliquid dolorem?
+                        <div class="tab-content">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-6 moibe-50 carosul PerProductPadding">
+                                    <a href="./Product_Single_Page.html">
+                                        <div class="Product">
+                                            <!-- discount persentage start -->
+                                            <div class="DisPersent">
+                                                10%
+                                            </div>
+                                            <!-- discount persentage end -->
+        
+                                            <div class="ProductImg">
+                                                <img src="./assets/images/Dairy-Bakery/Chocolates.jpg" alt="">
+                                            </div>
+        
+                                            <div class="productText">
+                                                <div class="NamePrice">
+                                                    <p class="Name">
+                                                        Native Organic Papaya
+                                                    </p>
+                                                    <!-- <br> -->
+                                                    <span class="Quantity">
+                                                        In Stock <span>1KG</span>
+                                                    </span>
+        
+                                                    <div class="Price">
+                                                        <span class="discount">180tk</span>
+                                                        150tk
+                                                    </div>
+                                                </div>
+        
+                                                <div class="ProductBtnIncement text-center">
+                                                    <!-- <div class="Incement">
+                                                        <span class="Plus">+</span>
+                                                        <span>1</span>
+                                                        <span class="Minnus">-</span>
+                                                    </div> -->
+                                                    
+                                                    <button>
+                                                        add to cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-4 col-sm-6 moibe-50 carosul PerProductPadding">
+                                    <a href="./Product_Single_Page.html">
+                                        <div class="Product">
+                                            <!-- discount persentage start -->
+                                            <div class="DisPersent">
+                                                10%
+                                            </div>
+                                            <!-- discount persentage end -->
+        
+                                            <div class="ProductImg">
+                                                <img src="./assets/images/Dairy-Bakery/Chocolates.jpg" alt="">
+                                            </div>
+        
+                                            <div class="productText">
+                                                <div class="NamePrice">
+                                                    <p class="Name">
+                                                        Native Organic Papaya
+                                                    </p>
+                                                    <!-- <br> -->
+                                                    <span class="Quantity">
+                                                        In Stock <span>1KG</span>
+                                                    </span>
+        
+                                                    <div class="Price">
+                                                        <span class="discount">180tk</span>
+                                                        150tk
+                                                    </div>
+                                                </div>
+        
+                                                <div class="ProductBtnIncement text-center">
+                                                    <!-- <div class="Incement">
+                                                        <span class="Plus">+</span>
+                                                        <span>1</span>
+                                                        <span class="Minnus">-</span>
+                                                    </div> -->
+                                                    
+                                                    <button>
+                                                        add to cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
-                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6 ReviewDiv text-center">
-                                            <h4 class="text-left">Give Reviews</h4>
-
-                                            <form action="" class="text-left">
-                                                <div>
-                                                    <label for="name">Name</label>
-                                                    <input type="name" placeholder="">
-                                                </div>
-                                                
-                                                <div>
-                                                    <label for="email">Email</label>
-                                                    <input type="email" placeholder="">
-                                                </div>
-                                                
-                                                <div>
-                                                    <label for="massage">Massage</label>
-                                                    <textarea name="Massage" placeholder="type massage"></textarea>
-                                                </div>
-                                            </form>
-
-                                            <div class="PatingDiv text-left">
-                                                <p>Rating</p>
-                                                <ul>
-                                                    <li><i class="fa-regular fa-star"></i></li>
-                                                    <li><i class="fa-regular fa-star"></i></li>
-                                                    <li><i class="fa-regular fa-star"></i></li>
-                                                    <li><i class="fa-regular fa-star"></i></li>
-                                                    <li><i class="fa-regular fa-star"></i></li>
-                                                </ul>
+                                <div class="col-lg-4 col-md-4 col-sm-6 moibe-50 carosul PerProductPadding">
+                                    <a href="./Product_Single_Page.html">
+                                        <div class="Product">
+                                            <!-- discount persentage start -->
+                                            <div class="DisPersent">
+                                                10%
                                             </div>
-
-                                            <button class="revied">Submit</button>
-                                        </div>
-
-                                        <div class="col-lg-6 col-md-6 ReviewDiv text-center">
-                                            <h4 class="text-left">Reviews</h4>
-                                            
-                                            <div class="PersonReview">
-                                                <div class="PersonImg">
-                                                    <img src="./assets/images/userimg1.png" alt="">
-                                                </div>
-
-                                                <div>
-                                                    <p class="perosName">Jaitun</p>
-                                                    <div class="PatingDiv text-left">
-                                                        <!-- <p>Rating</p> -->
-                                                        <ul>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                    <p class="pesonReview">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                    </p>
-                                                </div>
+                                            <!-- discount persentage end -->
+        
+                                            <div class="ProductImg">
+                                                <img src="./assets/images/Dairy-Bakery/Chocolates.jpg" alt="">
                                             </div>
-                                            
-                                            <div class="PersonReview">
-                                                <div class="PersonImg">
-                                                    <img src="./assets/images/userimg1.png" alt="">
-                                                </div>
-
-                                                <div>
-                                                    <p class="perosName">Jaitun</p>
-                                                    <div class="PatingDiv text-left">
-                                                        <!-- <p>Rating</p> -->
-                                                        <ul>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                    <p class="pesonReview">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        
+                                            <div class="productText">
+                                                <div class="NamePrice">
+                                                    <p class="Name">
+                                                        Native Organic Papaya
                                                     </p>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="PersonReview">
-                                                <div class="PersonImg">
-                                                    <img src="./assets/images/userimg1.png" alt="">
-                                                </div>
-
-                                                <div>
-                                                    <p class="perosName">Jaitun</p>
-                                                    <div class="PatingDiv text-left">
-                                                        <!-- <p>Rating</p> -->
-                                                        <ul>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                        </ul>
+                                                    <!-- <br> -->
+                                                    <span class="Quantity">
+                                                        In Stock <span>1KG</span>
+                                                    </span>
+        
+                                                    <div class="Price">
+                                                        <span class="discount">180tk</span>
+                                                        150tk
                                                     </div>
-                                                    <p class="pesonReview">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                    </p>
+                                                </div>
+        
+                                                <div class="ProductBtnIncement text-center">
+                                                    <!-- <div class="Incement">
+                                                        <span class="Plus">+</span>
+                                                        <span>1</span>
+                                                        <span class="Minnus">-</span>
+                                                    </div> -->
+                                                    
+                                                    <button>
+                                                        add to cart
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> 
+                                    </a>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-4 col-sm-6 moibe-50 carosul PerProductPadding">
+                                    <a href="./Product_Single_Page.html">
+                                        <div class="Product">
+                                            <!-- discount persentage start -->
+                                            <div class="DisPersent">
+                                                10%
+                                            </div>
+                                            <!-- discount persentage end -->
+        
+                                            <div class="ProductImg">
+                                                <img src="./assets/images/Dairy-Bakery/Chocolates.jpg" alt="">
+                                            </div>
+        
+                                            <div class="productText">
+                                                <div class="NamePrice">
+                                                    <p class="Name">
+                                                        Native Organic Papaya
+                                                    </p>
+                                                    <!-- <br> -->
+                                                    <span class="Quantity">
+                                                        In Stock <span>1KG</span>
+                                                    </span>
+        
+                                                    <div class="Price">
+                                                        <span class="discount">180tk</span>
+                                                        150tk
+                                                    </div>
+                                                </div>
+        
+                                                <div class="ProductBtnIncement text-center">
+                                                    <!-- <div class="Incement">
+                                                        <span class="Plus">+</span>
+                                                        <span>1</span>
+                                                        <span class="Minnus">-</span>
+                                                    </div> -->
+                                                    
+                                                    <button>
+                                                        add to cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-4 col-sm-6 moibe-50 carosul PerProductPadding">
+                                    <a href="./Product_Single_Page.html">
+                                        <div class="Product">
+                                            <!-- discount persentage start -->
+                                            <div class="DisPersent">
+                                                10%
+                                            </div>
+                                            <!-- discount persentage end -->
+        
+                                            <div class="ProductImg">
+                                                <img src="./assets/images/Dairy-Bakery/Chocolates.jpg" alt="">
+                                            </div>
+        
+                                            <div class="productText">
+                                                <div class="NamePrice">
+                                                    <p class="Name">
+                                                        Native Organic Papaya
+                                                    </p>
+                                                    <!-- <br> -->
+                                                    <span class="Quantity">
+                                                        In Stock <span>1KG</span>
+                                                    </span>
+        
+                                                    <div class="Price">
+                                                        <span class="discount">180tk</span>
+                                                        150tk
+                                                    </div>
+                                                </div>
+        
+                                                <div class="ProductBtnIncement text-center">
+                                                    <!-- <div class="Incement">
+                                                        <span class="Plus">+</span>
+                                                        <span>1</span>
+                                                        <span class="Minnus">-</span>
+                                                    </div> -->
+                                                    
+                                                    <button>
+                                                        add to cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-4 col-sm-6 moibe-50 carosul PerProductPadding">
+                                    <a href="./Product_Single_Page.html">
+                                        <div class="Product">
+                                            <!-- discount persentage start -->
+                                            <div class="DisPersent">
+                                                10%
+                                            </div>
+                                            <!-- discount persentage end -->
+        
+                                            <div class="ProductImg">
+                                                <img src="./assets/images/Dairy-Bakery/Chocolates.jpg" alt="">
+                                            </div>
+        
+                                            <div class="productText">
+                                                <div class="NamePrice">
+                                                    <p class="Name">
+                                                        Native Organic Papaya
+                                                    </p>
+                                                    <!-- <br> -->
+                                                    <span class="Quantity">
+                                                        In Stock <span>1KG</span>
+                                                    </span>
+        
+                                                    <div class="Price">
+                                                        <span class="discount">180tk</span>
+                                                        150tk
+                                                    </div>
+                                                </div>
+        
+                                                <div class="ProductBtnIncement text-center">
+                                                    <!-- <div class="Incement">
+                                                        <span class="Plus">+</span>
+                                                        <span>1</span>
+                                                        <span class="Minnus">-</span>
+                                                    </div> -->
+                                                    
+                                                    <button>
+                                                        add to cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- Product view and filter result start --> 
+                </div>
+            </div>
+        </section>
+        <!-- main section end -->
+
+        <!-- Banner section start-->
+        <section class="CampaignsBannerBotom">
+            <div class="container">
+                <div class="row">
+                    <div class="BannerEihttext">
+                        <img src="./assets/images/carosul/carosul img.webp" class="d-block w-100" alt="...">
+    
+                        <div class="carousel-caption">
+                            <div class="HerosText">
+                                <div class="HerosTextunder">
+                                    <p>Some Representative</p>
+                                    <h5>Shop Fresh Fruits & Organic Food</h5>
+                                    <button>Learn More</button>
                                 </div>
                             </div>
                         </div>
@@ -680,15 +891,15 @@
                 </div>
             </div>
         </section>
-        <!-- heros end -->
+        <!-- Banner section end-->
 
-        <!-- related Product start -->
-        <section class="SectionPadding CatagoriPadding PddingMannage RelatedProdSec">
+        <!-- populer product section stat -->
+        <section class="SectionPadding CatagoriPadding PddingMannage">
             <div class="container">
                 <div class="row">
                     <div class="Hadline"> 
                         <div class="Titelh4">
-                            <h4>Related Product</h4>
+                            <h4>Populer Product</h4>
                         </div>
 
                         <div class="SeeAll text-right">
@@ -698,7 +909,7 @@
                         </div>
                     </div>
 
-                    <div class="FoductList">
+                    <div class="FoductList PopulerProduct">
                         <div class="row">
                             <div class="col-lg-3 col-md-4 col-sm-6 moibe-50 carosul Compute-20 PerProductPadding">
                                 <a href="./Product_Single_Page.html">
@@ -710,7 +921,7 @@
                                         <!-- discount persentage end -->
     
                                         <div class="ProductImg">
-                                            <img src="./assets/images/Cooking-Essential/flour.jpg" alt="">
+                                            <img src="./assets/images/Dairy-Bakery/Chocolates.jpg" alt="">
                                         </div>
     
                                         <div class="productText">
@@ -755,7 +966,7 @@
                                         <!-- discount persentage end -->
     
                                         <div class="ProductImg">
-                                            <img src="./assets/images/Cooking-Essential/flour1.jpg" alt="">
+                                            <img src="./assets/images/Dairy-Bakery/Powder Milk.jpg" alt="">
                                         </div>
     
                                         <div class="productText">
@@ -800,7 +1011,7 @@
                                         <!-- discount persentage end -->
     
                                         <div class="ProductImg">
-                                            <img src="./assets/images/Cooking-Essential/Rice.jpg" alt="">
+                                            <img src="./assets/images/Dairy-Bakery/Chips2.jpg" alt="">
                                         </div>
     
                                         <div class="productText">
@@ -845,7 +1056,7 @@
                                         <!-- discount persentage end -->
     
                                         <div class="ProductImg">
-                                            <img src="./assets/images/Cooking-Essential/Rice1.jpg" alt="">
+                                            <img src="./assets/images/Dairy-Bakery/Chocolates1.jpg" alt="">
                                         </div>
     
                                         <div class="productText">
@@ -890,7 +1101,7 @@
                                         <!-- discount persentage end -->
                                         
                                         <div class="ProductImg">
-                                            <img src="./assets/images/Cooking-Essential/Rice2.jpg" alt="">
+                                            <img src="./assets/images/Dairy-Bakery/Chips3.jpg" alt="">
                                         </div>
     
                                         <div class="productText">
@@ -929,43 +1140,7 @@
                 </div>
             </div>
         </section>
-        <!-- related Product end -->
-
-        <!-- Banner section start-->
-        <section class="SectionPadding CatagoriPadding BannerPadding">
-            <div class="container">
-                <!-- <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 BannerDiv">
-                        <div class="BannerImage">
-                            <img src="./assets/images/Banner/Banner.jpg" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 col-sm-6 BannerDiv">
-                        <div class="BannerImage">
-                            <img src="./assets/images/Banner/Banner.jpg" alt="">
-                        </div>
-                    </div>
-                </div> -->
-            
-                <div class="row">
-                    <div class="BannerEihttext">
-                        <img src="./assets/images/carosul/carosul img.webp" class="d-block w-100" alt="...">
-    
-                        <div class="carousel-caption">
-                            <div class="HerosText">
-                                <div class="HerosTextunder">
-                                    <p>Some Representative</p>
-                                    <h5>Shop Fresh Fruits & Organic Food</h5>
-                                    <button>Learn More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Banner section end-->
+        <!-- populer product section end -->
 
         <!-- Footer Start -->
         <footer class="SectionPadding">
@@ -975,11 +1150,6 @@
                         <div class="FristFooter row">
                             <div class="col-lg-4 col-md-4 col-sm-6 moibe-50">
                                 <img src="./assets/images/jatuna-logo-meat.png" alt="">
-
-                                <!-- <p class="fotrerpare"> -->
-                                    <!-- Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.  -->
-                                    <!-- Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. -->
-                                <!-- </p> -->
 
                                 <ul class="SocilaIcon">
                                     <li>
@@ -1065,32 +1235,6 @@
                             
                             <div class="col-lg-2 col-md-4 col-sm-6 moibe-50">
                                 <h5>Help</h5>
-                                <!-- <ul>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-brands fa-facebook"></i>
-                                            Facebook
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-brands fa-whatsapp"></i>
-                                            What's App
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-regular fa-envelope"></i>
-                                            E-mail
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-regular fa-comment"></i>
-                                            Contact
-                                        </a>
-                                    </li>
-                                </ul> -->
 
                                 <ul>
                                     <li>
@@ -1121,8 +1265,9 @@
         <!-- custom js -->
         <script src="./assets/js/app.js"></script>
 
-         <!-- bootstap script -->
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+        <!-- bootstap script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    
     </body>
 </html>

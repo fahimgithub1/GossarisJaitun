@@ -9,9 +9,12 @@ body{
     padding: 0;
 }
 
-/* img{
-    width: 100%;
-} */
+
+.rowMargincont{
+    margin: auto;
+    padding-left: 0;
+    margin-right: 0;
+}
 
 .container{
     width: 100%;
@@ -685,7 +688,7 @@ input:focus,input:hover{
 .NavSubBranceLI{
     padding: 0 !important;
     position: relative;
-    z-index: 0;
+    /* z-index: 10; */
 }
 
 .category-sub-menu {
@@ -697,7 +700,7 @@ input:focus,input:hover{
     width: 900px;
     min-height: calc(100% - 10px);
     border: 1px solid rgba(34, 34, 34, 0.1);
-    z-index: 100;
+    /* z-index: 100; */
     display: none;
 }
 
@@ -1323,6 +1326,7 @@ footer ul li{
     border-radius: 12px;
     position: relative;
     overflow: hidden;
+    z-index: -1;
 }
 .BgBlack{
     position: absolute;
@@ -1352,7 +1356,7 @@ footer ul li{
     overflow: visible;
 } */
 
-.ProductDaitlesdiv{
+/* .ProductDaitlesdiv{
     max-width: 1200px;
     width: 80%;
     margin: auto;
@@ -1363,6 +1367,17 @@ footer ul li{
     padding: 20px;
     border-radius: 12px;
     box-shadow: rgb(207 207 207) 0px 0px 5px;
+} */
+
+.ProductDaitlesdiv{
+    max-width: 1200px;
+    width: 85%;
+    margin: auto;
+    background-color: var(--section-bg);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: rgb(207 207 207) 0px 0px 5px;
+    margin-top: -319px;
 }
 
 .ProductDaitlesdiv img{
@@ -1384,8 +1399,7 @@ footer ul li{
 .SmalDisciption{
     font-size: 20px;
     color: rgb(52, 52, 52);
-    margin-bottom: 1.2rem !important;
-    height: 150px;
+    margin-bottom: 1rem !important;
     overflow: hidden;
 }
 
@@ -1477,7 +1491,7 @@ footer ul li{
     .tab-content .tab-pane{
         padding: 20px ;
         border-radius: 10px;
-        height: 450px;
+        /* height: 450px; */
         border-top: 1px solid rgb(219, 213, 213);
     }
 
@@ -1559,8 +1573,8 @@ footer ul li{
     }
 
     .PersonImg img{
-        height: 60px !important;
-        width: 60px !important;
+        height: 100% !important;
+        width: 100% !important;
     }
 
     .PersonReview .perosName{
@@ -1582,7 +1596,7 @@ footer ul li{
 
     /* reated product section start */
     .RelatedProdSec{
-        margin-top: 660px;
+        /* margin-top: 660px; */
     }
     /* reated product section end */
 
@@ -1604,17 +1618,811 @@ footer ul li{
     /* banner end */
 /* product page end */
 
+/* Catagoirs Page start */
+.CampaignsBannerBotom{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.CampaignsSection{
+    margin-top: 166px;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.AllProductImg{
+    height: 206px;
+    max-height: 206px;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.AllProductImg div{
+    border: 1px solid var(--logoColor-1);
+    border-radius: 7px;
+    height: 100%;
+    overflow: hidden;
+    padding: 0 !important;
+}
+
+.AllProduct .tab-content{
+    padding: 1.7rem 2px;
+    padding-bottom: 0rem !important;
+}
+
+.Catagori .Catagori2{
+    border-radius: 7px;
+    box-shadow: 0 0 5px #cbc9c9;
+}
+
+.Catagori h5{
+    padding: 10px 15px;
+    background-color: var(--logoColor-1);
+    color: white;
+    font-weight: 700;
+    border-radius: 7px 7px 0 0;
+    margin-bottom: 0;
+}
+
+.TaiterSpan{
+    text-transform: uppercase;
+    color: #222;
+    font-weight: 600;
+}
+
+.Catagori3{
+    padding: 20px;
+    font-size: 14PX;
+}
+
+.Catagori3:not(:last-child){
+    border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+.Catagori3 a{
+    padding: 5px 0px;
+    color: rgb(71, 71, 71);
+    margin-bottom: 0;
+    display: block;
+}
+
+.Catagori3 a:hover{
+    color: var(--logoColor-2);
+}
+
+.priceLabel{
+    background-color: var(--logoColor-2);
+    height: 12px;
+    border-radius: 7px;
+    position: relative;
+    margin-top: .7rem;
+    border: 1px solid rgb(107, 107, 107);
+}
+
+.pricelavel1, .pricelavel2{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid rgb(46, 45, 45);
+    position: absolute;
+    cursor: pointer;
+    top: -3.5px;
+    box-shadow: 0 0 0 1px rgb(129, 129, 129) ;
+}
+
+.pricelavel1{
+    left: 0;
+}
+
+.pricelavel2{
+    right: 0%;
+}
+
+.priceInput{
+    margin-top: .7rem;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.priceInput input{
+    border: 1px solid #d8d8d8;
+    color: #211e1f;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-align: center;
+    width: 50px;
+    float: none;
+    height: 36px;
+    max-width: 900px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    font-size: 14px;
+}
+
+.MainCatagoriDiv{
+    padding-top: 50px;
+}
+
+    /* filter part start*/
+    .CtagorisFilter{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* margin-top: 1.5rem; */
+        background: #d8d8d8;
+        padding: 10px 8px;
+        border-radius: 5px;
+        border: 1px solid #d1cccc;
+        color: #444;
+    }
+
+@media screen and (min-width: 1100px) {
+    .CatagorisPage{
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+    }
+
+    .CatagorisPage .tab-content{
+        margin-bottom: 0 !important;
+    }
+}
+
+.CtagorisFilter select{
+    border-radius: 5px;
+    padding: 2px 5px;
+    color: #744444;
+    width: 120px;
+    max-width: 120px;
+}
+
+.CtagorisFilter select:focus{
+    outline: none;
+}
+
+.CatagoriFilter{
+    background: #ff863f;
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
+    display: none;
+}
+
+.ShowCatagoritStapes{
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.tab-content .PerProductPadding{
+    margin-bottom: 20px;
+}
+/* Catagoris Page end */
+
+/* Bloge Page start */
+.BlogSection{
+    padding-top: 20px;
+    margin-bottom: -1rem;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+    .BlogSection{
+        margin-bottom: 0rem;
+    }
+}
+
+.AboutUsPerDiv2{
+    max-width: 800px;
+    margin: auto;
+}
+
+.AboutUsPerDiv{
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .BlogSection{
+        padding-top: 50px;
+    } 
+}
+
+/* @media screen and (max-width: 1101) and (min-width: 1024px){
+    
+} */
+
+.AboutUsLeft{
+    color: black !important;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+.AboutUsPerDiv p{
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+}
+
+.RightPerDiv{
+    margin-bottom: 1.4rem;
+}
+
+.AboutUsPerDiv h5{
+    margin-bottom: 1rem;
+    color: var(--logoColor-1);
+    font-weight: bold;
+    font-size: 1.45rem;
+}
+
+.AboutUsLeft a:hover{
+    color: var(--logoColor-2);
+}
+
+.AboutUsLeft div p a{
+    font-weight: bold;
+}
+
+.AboutUsLeft img{
+    width: 95%;
+    margin: auto;
+    margin-bottom: .5rem;
+}
+
+.AboutUsRight{
+    color: black;
+}
+
+.AboutUsRight h5{
+    color: black;
+    text-align: center;
+    padding: 10px;
+    background: var(--logoColor-1);
+    color: white;
+    font-weight: 500;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: .7rem;
+    text-transform: uppercase;
+}
+
+.AboutUSLi{
+    display: flex;
+    align-items: center;
+    font: 20px;
+}
+
+.AboutUSLi:not(:last-child){
+    margin-bottom: .7rem;
+}
+
+.AboutUsRight .IconDivAboutus{
+    background-color: var(--logoColor-1);
+    margin-right: .7rem;
+    color: white !important;
+    padding: 5px 6px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px 0 0 5px;
+}
+
+.AboutUsRight .IconDivAboutus i{
+    color: white !important;
+}
+
+.AboutUsRight .LinkDiv{
+    font-size: 20px;
+}
+
+.AboutUsRight .LinkDiv a{
+    color: var(--logoColor-1);
+}
+
+.AboutUsRight .LinkDiv a:hover{
+    color: var(--logoColor-2);
+}
+
+.LinkFrist{
+    padding: 6px 10px !important;
+    font-size: 17px !important;
+}
+
+/* Terms And Cond page start*/
+.TermsAndCond{
+    font-size: 15px;
+}
+/* Terms And Cond page end*/
+
+.PerBlogDIv{
+    box-shadow: 0 0 5px rgb(214 204 204);
+    padding: 11px;
+    border-radius: 10px;
+    height: min-content;
+    padding-bottom: 23px;
+    font-size: 18px;
+    border: 1px solid #2c66af78;
+}
+
+.PerBlogDIv:hover{
+    border: 1px solid var(--logoColor-2);
+}
+
+.PerBlogDIvCol:not(:last-child){
+    padding-bottom: 25px;
+}
+
+.PerBlogDIv h2{
+    font-size: 22px;
+    font-weight: bolder;
+    margin-bottom: .8rem;
+    color: var(--logoColor-1);
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.PerBlogDIv ul{
+    font-size: 15px;
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+}
+
+.PerBlogDIv ul li i{
+    margin-right: .2rem;
+}
+
+.PerBlogDIv ul li:not(:last-child){
+    margin-right: .5rem;
+}
+
+.PerVlogImg{
+    width: 100%;
+    overflow: hidden;
+}
+
+.PerBlogDIv img{
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: .5rem;
+    border-radius: 7px;
+    max-height: 200px;
+}
+
+.PerBlogDIv p{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.PerBlogDIv .BlogDatilsL{
+    border: none;
+    outline: none;
+    background-color: var(--logoColor-1);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+
+.PerBlogDIv .BlogDatilsL:hover{
+    color: white;
+    background-color: var(--logoColor-2);
+}
+
+/* Blog page end */
+
+/* Blog Daitles start */
+.DaitlesPerDIv .MainTilte{
+    font-weight: bolder;
+}
+
+.DaitlesPerDIv h3{
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+
+.DaitlesPerDIv .imageDivBlog{
+    overflow: hidden;
+}
+
+.DaitlesPerDIv img{
+    width: 70%;
+    height: auto;
+    border-radius: 7px;
+}
+
+.DaitlesPerDIv p{
+    font-size: 17px;
+    margin-bottom: 0;
+}
+
+.DaitlesPerDIv p:not(:last-child){
+    margin-bottom: .7rem;
+}
+
+.DaitlesPerDIv:not(:last-child){
+    margin-bottom: 2rem;
+}
+
+.CommentCount{
+    font-size: 24px;
+}
+
+.CommentCount span{
+    margin-right: .5rem;
+}
+
+.BlogBtn .button{
+    font-size: 16px;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 7px;
+    color: white;
+    background-color: var(--logoColor-1);
+}
+
+.BlogBtn .button:hover{
+    color: white;
+    cursor: pointer;
+    background-color: var(--logoColor-2);
+}
+
+.ShowComment{
+    padding: 10px;
+    margin-top: .5rem;
+}
+
+.ShowComment .NmaeCommenter{
+    font-size: 20px;
+    color: rgb(30, 30, 30);
+    font-weight: 600;
+}
+
+.ShowComment .CommentDate{
+    font-size: 16px;
+}
+
+.ShowComment .SubmitedCommet{
+    padding: 20px;
+    font-size: 15px;
+    margin-top: .6rem;
+    border-radius: 7px;
+    border: 1px solid rgb(112, 112, 112);
+}
+
+.ShowComment .SubmitedCommet span{
+    display: block;
+}
+
+.ShowComment .SubmitedCommet .CommentReply{
+    padding: 8px 15px;
+    border-radius: 7px;
+    color: white;
+    margin-top: 1rem;
+    background: var(--logoColor-2);
+}
+
+.ReolyForm{
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.ReolyForm form div{
+    display: block;
+    padding-top: 1rem;
+}
+
+
+.ReolyForm form label{
+    display: block;
+    width: 100%;
+}
+
+.ReolyForm form input{
+    display: block;
+    width: 100%;
+    float: none;
+    margin-top: .5rem;
+    max-width: 400px;
+    border: 1px solid #a8a8a8 !important;
+}
+
+.ReolyForm form textarea{
+    border: 1px solid #a8a8a8 !important;
+    display: block;
+    width: 100%;
+    float: none;
+    margin-top: .5rem;
+    height: 150px;
+    border-radius: 7px;
+    font-size: 16px ;
+    padding: 10px;
+}
+
+.ReolyForm form textarea:focus{
+    border: 1px solid black !important;
+    outline:  none !important;
+}
+
+.ReolyForm button{
+    border: none;
+    padding: 12px 26px;
+    border-radius: 7px;
+    color: white;
+    margin: auto;
+    margin-top: 1rem;
+    background: var(--logoColor-1);
+}
+
+.ReolyForm button:hover{
+    background: var(--logoColor-2);
+}
+/* Blog Daitles end */
+
+/* support start */
+.suportMain{
+    padding-bottom: 0;
+    padding-top: 1.3rem;
+}
+
+.suportMain a:hover{
+    color: black;
+}
+
+.SupportAstDIv{
+    padding-top: .6rem;
+    background: linear-gradient(#b8d8e3, #62BDF4);
+}
+
+.SupportAstDIv .banner.banner-inner{
+    background: none;
+}
+
+.HelpeHeros{
+    padding: 41px 0;
+    padding-bottom: 30px !important;
+    color: black;
+}
+
+.HelpeHeros h2{
+    margin-bottom: 23px;
+    font-size: 2.5rem;
+}
+
+.HelpeSearch{
+    max-width: 700px;
+    margin: auto;
+    padding-bottom: 35px !important;
+    position: relative;
+    justify-content: center;
+}
+
+.HelpeSearch .Searchbtn{
+    position: absolute;
+    top: 8px;
+    right: 46px;
+    font-size: 20px;
+    color: #797979;
+    cursor: pointer;
+}
+
+.HelpeSearch input{
+    height: 49px;
+    border: 1px solid #919191;
+}
+
+.SupportListDiv h4{
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.SupportPertpe{
+    border: 2px solid transparent;
+    border-radius: 6px;
+    padding: 18px 11px;
+    margin-bottom: 1rem !important;
+    text-align: justify;
+}
+
+.SupportPertpe:hover{
+    border: 2px solid var(--logoColor-2);
+    box-shadow:  0 0 10px #c5c5c5;
+}
+
+.SupportPertpe h6{
+    font-weight: bold;
+    font-size: 19px;
+    text-align: left;
+    color: var(--logoColor-1);
+}
+
+.SupportPertpe .SuportIcon{
+    box-shadow: 0 0 7px #d6d6d6;
+    border: 1px solid var(--logoColor-1);
+    padding: 15px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    min-height: 72px;
+    min-width: 78px;
+    max-height: 72px;
+    max-width: 78px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.SupportPertpe i{
+    font-size: 35px;
+    color: var(--logoColor-1);
+}
+/* support end */
+
+/* support single page start */
+.PathSuportSEcio{
+    margin-bottom: 3rem;
+}
+
+.PathSuport{
+    text-transform: capitalize;
+    padding-bottom: 20px ;
+    border-bottom: 1px solid black;
+}
+.PathSuport a:hover{
+    color: var(--logoColor-2);
+}
+
+.Question{
+    max-height: 250px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.suportMain .Question button{
+    padding: 5px 5px;
+    margin-bottom: 0rem;
+    text-align: left;
+    width: 100%;
+    font-style: italic;
+}
+
+.suportMain .Question .active{
+    background: none !important;
+}
+
+.suportMain .AnswerDiv{
+    margin: 0;
+    padding: 0px 30px;
+}
+
+.suportMain .Answers{
+    border-radius: 7px;
+    padding: 10px;
+    box-shadow: 0 0 10px #c2c2c2;
+    border: 1px solid #b0b0b0;
+    margin-top: 0 !important;
+    border-left: 5px solid #2c66af;
+    border-right: 5px solid #fe853d;
+}
+
+.suportMain .Answers div{
+    width: 100%;
+}
+
+.suportMain .Answers .active{
+    color: black !important;
+}
+
+@media screen and (max-width: 1023px) {
+    .PathSuport{
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .Question{
+        margin-bottom: 1.5rem;
+    }
+
+    .suportMain .AnswerDiv{
+        padding: 0;
+    }
+
+    .HelpeSearch .Searchbtn{
+        right: 30px;
+    }
+
+    .AnswerDiv .tab-content {
+        padding-bottom: .7rem !important;
+    }
+
+    .SupportListDiv {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .SupportPertpe{
+        padding: 10px 4px !important;
+    }
+}
+/* support single page ends */
+
+@media screen and (max-width: 767px) {
+    .PerBlogDIvCol{
+        padding: 0 5px;
+    }
+
+    .PerBlogDIvCol:not(:last-child){
+        padding-bottom: 5px;
+    }
+
+    .DaitlesPerDIv{
+        margin-bottom: 1.2rem;
+    }
+
+    .PerBlogDIv:not(:last-child){
+        margin-bottom: 20px;
+    }
+
+    .PathSuportSEcio {
+        margin-bottom: 2rem;
+    }
+
+    .PerBlogDIv img{
+        width: 100%;
+    }
+
+    .PerBlogDIv{
+        padding: 15px;
+        margin-bottom:  1rem;
+        padding-bottom: 25px;
+    }
+
+    .AboutUsLeft{
+        padding: 10px;
+        padding-right: 10px !important;
+    }
+
+    .DaitlesPerDIv img{
+        width: 85%;
+        height: auto;
+    }
+
+    .SupportListDiv h4{
+        margin-bottom: 10px;
+    }
+
+    .SupportPertpe{
+        padding: 10px 11px;
+        margin-bottom: .2rem !important;
+    }
+
+    .HelpeHeros {
+        padding: 24px 0;
+        padding-bottom: 13px !important;
+    }
+
+    .ReolyForm button{
+        border: none;
+        padding: 8px 18px;
+        border-radius: 7px;
+        font-size: 16px;
+    }
+}
+/* Blog page End */
+
 /* responsive start */
 @media screen and (min-width: 1400px) {
     .ProductDaitlesdiv{
         left: calc((100% - 1200px)/2);
     }
 }
+
 @media screen and (min-width: 1200px) {
     .Compute-20{
         width: 20%;
     }
 }
+
 @media screen and (max-width: 1200px) {
     .lovehide{
         display: none;
@@ -1626,6 +2434,10 @@ footer ul li{
 
     .HerosSection {
         margin-top: 160px;
+    }
+
+    .CampaignsSection{
+        margin-top: 152px;
     }
 
     .Product{
@@ -1643,6 +2455,14 @@ footer ul li{
     .BannerPadding{
         padding-top: 30px;
     }
+    
+    .tab-content .Product{
+        margin-bottom: 0px;
+    }
+    
+    .PopulerProduct{
+        margin-bottom: -20px;
+    }
 }
 
 /* nav for tabe and mobile start */
@@ -1657,6 +2477,11 @@ footer ul li{
 
     .HerosSection{
         margin-top: 81px;
+    }
+
+    .CampaignsSection{
+        margin-top: 79px;
+        padding-top: 10px;
     }
 
     .Categorieitem{
@@ -1695,17 +2520,71 @@ footer ul li{
        font-size: 16px;
    }
 
-   footer{
-        margin-top: 250px;
-   }
-
     footer ul{
         margin-bottom: 20px;
     }
-
-    .RelatedProdSec{
-        margin-top: 760px !important;
+    
+    .CampaignsBannerBotom{
+        padding-top: 20px;
+        padding-bottom: 0px;
     }
+
+    .MainCatagoriDiv{
+        padding-top: 30px;
+    }
+}
+
+/* for tabe uneversal */
+@media screen and (max-width: 962px) and (min-width: 601px) {
+    .ProductDaitlesdiv{
+        width: 94%;
+        /* left: 3%; */
+        top: 320px;
+    }
+
+    .ProductBtn button {
+        width: 167px;
+        font-size: 16px;
+    }
+
+    .RightSide .ProductBtnIncement{
+        width: 165px;
+    }
+
+    .RightSide .Incement {
+        width: 165px;
+        padding: 0px 6px;
+        font-size: 20px;
+    }
+
+    .RightSide .Incement .Plus,
+    .RightSide .Incement .Minnus {
+        font-size: 23px;
+        height: 31px;
+        width: 32px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .Catagori{
+        display: none;
+    }
+
+    .AllProduct{
+        padding: 2px;
+    }
+
+    .CatagorisPage {
+        margin-top: 84px;
+    }
+
+    .AllProductImg{
+        height: 150px;
+    }  
+    
+    .PerBlogDIvCol:not(:last-child){
+        padding-bottom: 15px;
+    }  
 }
 
 @media screen and (max-width: 767px) {
@@ -1784,6 +2663,23 @@ footer ul li{
     footer{
         margin-top: 20px;
     }
+
+    .ProductDaitlesdiv{
+        width: 100%;
+        top: 320px;
+    }
+
+    .mainProdictDiv{
+        padding: 0;
+    }
+
+    .ProductDaitlesdiv .row{
+        padding: 0;
+    }
+
+    .PeoudctBigImgage{
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 1023px) and (min-width: 685px){
@@ -1833,12 +2729,58 @@ footer ul li{
         padding-left: 0;
         padding-right: 0;
     }
+    
+    .BgBlack{
+        padding-top: 10px;
+    }
+    
+    .ProductBg h1{
+        font-size: 29px;
+    }
 
+    .ProductBg {
+        height: 250px;
+    }
+
+    .ProductDaitlesdiv{
+        margin-top: -73px;
+        border-radius: 9px;
+        padding: 7px;
+    }
+
+    .ProductBtn button {
+        width: 151px;
+        font-size: 14px;
+    }
+
+    .ProductBtn button:not(:last-child) {
+        margin-right: 0.5rem;
+        margin-bottom: 14px;
+    }
+
+    .PersonImg {
+        height: 40px;
+        width: 40px;
+    }
 }
 
 @media screen and (max-width: 599px) {
     .owl-item .item {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 346px) {
+    .nav-tabs li button {
+        padding: 6px 16px;
+        font-size: 18px;
+    }
+
+    .nav-tabs li, 
+    .nav-tabs li button {
+        width: 135px;
+        text-align: center;
+        margin: 0;
     }
 }
 
