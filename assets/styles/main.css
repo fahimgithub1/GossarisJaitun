@@ -1822,21 +1822,12 @@ footer ul li{
     margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 1024px) {
-    .BlogSection{
-        padding-top: 50px;
-    } 
-}
-
-/* @media screen and (max-width: 1101) and (min-width: 1024px){
-    
-} */
-
 .AboutUsLeft{
     color: black !important;
     font-size: 20px;
     text-transform: capitalize;
     text-align: justify;
+    margin-bottom: -39px;
 }
 
 .AboutUsPerDiv p{
@@ -1846,7 +1837,10 @@ footer ul li{
 }
 
 .RightPerDiv{
-    margin-bottom: 1.4rem;
+    margin-bottom: 30px;
+    background: #ededed;
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .AboutUsPerDiv h5{
@@ -1876,14 +1870,12 @@ footer ul li{
 
 .AboutUsRight h5{
     color: black;
-    text-align: center;
+    text-align: left;
     padding: 10px;
-    background: var(--logoColor-1);
-    color: white;
     font-weight: 500;
     border-radius: 10px 10px 0 0;
-    margin-bottom: .7rem;
-    text-transform: uppercase;
+    margin-bottom: .5rem;
+    text-transform: capitalize;
 }
 
 .AboutUSLi{
@@ -1897,13 +1889,17 @@ footer ul li{
 }
 
 .AboutUsRight .IconDivAboutus{
-    background-color: var(--logoColor-1);
-    margin-right: .7rem;
+    margin-right: 0.7rem;
     color: white !important;
-    padding: 5px 6px;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 5px 0 0 5px;
+    border-radius: 7px;
+    overflow: hidden;
+    height: 59px;
+    width: 62px;
+    border: 1px solid #920d03;
+}
+
+.AboutUsRight .IconDivAboutus img{
+    height: 100%;
 }
 
 .AboutUsRight .IconDivAboutus i{
@@ -1911,20 +1907,24 @@ footer ul li{
 }
 
 .AboutUsRight .LinkDiv{
-    font-size: 20px;
+    font-size: 15px !important;
+    font-weight: 500;
+    padding: 0px 10px !important;
 }
 
 .AboutUsRight .LinkDiv a{
-    color: var(--logoColor-1);
+    color: rgb(101, 101, 101);
 }
 
 .AboutUsRight .LinkDiv a:hover{
-    color: var(--logoColor-2);
+    color: var(--logoColor-1);
 }
 
 .LinkFrist{
-    padding: 6px 10px !important;
-    font-size: 17px !important;
+    padding: 0px 10px !important;
+    font-size: 15px !important;
+    padding-top: 7px !important;
+    border-top: 1px solid rgb(154, 154, 154);
 }
 
 /* Terms And Cond page start*/
@@ -1934,17 +1934,10 @@ footer ul li{
 /* Terms And Cond page end*/
 
 .PerBlogDIv{
-    box-shadow: 0 0 5px rgb(214 204 204);
     padding: 11px;
     border-radius: 10px;
     height: min-content;
-    padding-bottom: 23px;
     font-size: 18px;
-    border: 1px solid #2c66af78;
-}
-
-.PerBlogDIv:hover{
-    border: 1px solid var(--logoColor-2);
 }
 
 .PerBlogDIvCol:not(:last-child){
@@ -1952,10 +1945,9 @@ footer ul li{
 }
 
 .PerBlogDIv h2{
-    font-size: 22px;
+    font-size: 1.5rem;
     font-weight: bolder;
     margin-bottom: .8rem;
-    color: var(--logoColor-1);
     text-align: left;
     text-transform: capitalize;
 }
@@ -1985,32 +1977,51 @@ footer ul li{
     padding-bottom: 0;
     margin-bottom: .5rem;
     border-radius: 7px;
-    max-height: 200px;
+    max-height: 240px;
 }
 
 .PerBlogDIv p{
     margin-bottom: 1rem;
     text-transform: capitalize;
+    font-size: 14px;
 }
 
 .PerBlogDIv .BlogDatilsL{
     border: none;
     outline: none;
-    background-color: var(--logoColor-1);
-    color: white;
-    padding: 8px 20px;
-    border-radius: 10px;
-    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    color: var(--logoColor-1);
 }
 
 .PerBlogDIv .BlogDatilsL:hover{
-    color: white;
-    background-color: var(--logoColor-2);
+    color: var(--logoColor-2);
 }
 
+.BlogBanner{
+    border: 1px solid var(--logoColor-1);
+}
 /* Blog page end */
 
 /* Blog Daitles start */
+.DaitlesPerDIv {
+    max-width: 850px;
+    margin: auto;
+}
+
+.DaitlesPerDIv ul{
+    margin-bottom: 25px;
+}
+
+.DaitlesPerDIv p{
+    margin-bottom: 25px;
+}
+
+.DaitlesPerDIv .PerBlogDIv{
+    padding-top: 0;
+}
+
+/* done */
 .DaitlesPerDIv .MainTilte{
     font-weight: bolder;
 }
@@ -2025,9 +2036,11 @@ footer ul li{
 }
 
 .DaitlesPerDIv img{
-    width: 70%;
+    width: 100%;
     height: auto;
     border-radius: 7px;
+    max-height: 400px;
+    margin-bottom: 25px;
 }
 
 .DaitlesPerDIv p{
@@ -2074,11 +2087,11 @@ footer ul li{
 .ShowComment .NmaeCommenter{
     font-size: 20px;
     color: rgb(30, 30, 30);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .ShowComment .CommentDate{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .ShowComment .SubmitedCommet{
@@ -2094,11 +2107,12 @@ footer ul li{
 }
 
 .ShowComment .SubmitedCommet .CommentReply{
-    padding: 8px 15px;
+    padding: 5px 11px;
     border-radius: 7px;
     color: white;
     margin-top: 1rem;
     background: var(--logoColor-2);
+    font-size: 13px;
 }
 
 .ReolyForm{
@@ -2146,16 +2160,27 @@ footer ul li{
 
 .ReolyForm button{
     border: none;
-    padding: 12px 26px;
+    padding: 7px 15px;
     border-radius: 7px;
     color: white;
     margin: auto;
     margin-top: 1rem;
     background: var(--logoColor-1);
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .ReolyForm button:hover{
     background: var(--logoColor-2);
+}
+
+.BlogComment{
+    max-width: 850px;
+    margin: auto;
+}
+
+.BlogMainSection .AboutUsLeft{
+    margin-bottom: 0px;
 }
 /* Blog Daitles end */
 
@@ -2382,11 +2407,6 @@ footer ul li{
         padding-right: 10px !important;
     }
 
-    .DaitlesPerDIv img{
-        width: 85%;
-        height: auto;
-    }
-
     .SupportListDiv h4{
         margin-bottom: 10px;
     }
@@ -2466,6 +2486,16 @@ footer ul li{
 }
 
 /* nav for tabe and mobile start */
+@media screen and (min-width: 1024px) {
+    .BlogSection{
+        padding-top: 50px;
+    } 
+
+    .BlogMainSection{
+        padding-top: 40px;
+    }
+}
+
 @media screen and (max-width: 1023px) {
     .hideOnPhone{
         display: none;
@@ -2531,6 +2561,10 @@ footer ul li{
 
     .MainCatagoriDiv{
         padding-top: 30px;
+    }
+
+    .BlogBanner{
+        margin-top: 10px;
     }
 }
 
@@ -2680,6 +2714,24 @@ footer ul li{
     .PeoudctBigImgage{
         margin-bottom: 20px;
     }
+
+    .PerBlogDIv{
+        padding-top: 0;
+    }
+
+    .AboutUsLeft{
+        padding: 0;
+        padding-right: 0 !important;
+    }
+
+    .PerBlogDIv{
+        padding-bottom: 0;
+        margin-bottom: 10px;
+    }
+
+    .AboutUsLeft{
+        margin-bottom: 15px;
+    }
 }
 
 @media screen and (max-width: 1023px) and (min-width: 685px){
@@ -2761,6 +2813,18 @@ footer ul li{
     .PersonImg {
         height: 40px;
         width: 40px;
+    }
+
+    .AboutUsRight{
+        margin-bottom: -18px;
+    }
+
+    .RightPerDiv {
+        padding-bottom: 20px;
+    }
+
+    .DaitlesPerDIv img{
+        max-height: 200px;
     }
 }
 
