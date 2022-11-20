@@ -206,6 +206,7 @@ input{
     border-radius: 6px;
     border: none;
     float: right;
+    border-radius: 27px;
     border: 1px solid #920d03;
 }
 
@@ -272,7 +273,7 @@ input:focus,input:hover{
     height: 40px;
     width: 50px;
     padding-top: 8px;
-    border-radius: 0 7px 7px 0;
+    border-radius: 0 22px 26px 0;
     text-align: center;
     color: white;
 }
@@ -1927,12 +1928,6 @@ footer ul li{
     border-top: 1px solid rgb(154, 154, 154);
 }
 
-/* Terms And Cond page start*/
-.TermsAndCond{
-    font-size: 15px;
-}
-/* Terms And Cond page end*/
-
 .PerBlogDIv{
     padding: 11px;
     border-radius: 10px;
@@ -2021,7 +2016,6 @@ footer ul li{
     padding-top: 0;
 }
 
-/* done */
 .DaitlesPerDIv .MainTilte{
     font-weight: bolder;
 }
@@ -2184,158 +2178,155 @@ footer ul li{
 }
 /* Blog Daitles end */
 
-/* support start */
-.suportMain{
-    padding-bottom: 0;
-    padding-top: 1.3rem;
-}
-
-.suportMain a:hover{
-    color: black;
-}
-
-.SupportAstDIv{
-    padding-top: .6rem;
-    background: linear-gradient(#b8d8e3, #62BDF4);
-}
-
-.SupportAstDIv .banner.banner-inner{
-    background: none;
-}
-
-.HelpeHeros{
-    padding: 41px 0;
-    padding-bottom: 30px !important;
-    color: black;
-}
-
-.HelpeHeros h2{
-    margin-bottom: 23px;
-    font-size: 2.5rem;
-}
-
-.HelpeSearch{
-    max-width: 700px;
+/* Contact Us start */
+.ContactUSDiv{
+    padding: 20px 0;
+    background-color: var(--section-bg);
+    border-radius: 9px;
+    max-width: 1200px;
     margin: auto;
-    padding-bottom: 35px !important;
-    position: relative;
-    justify-content: center;
 }
 
-.HelpeSearch .Searchbtn{
-    position: absolute;
-    top: 8px;
-    right: 46px;
-    font-size: 20px;
-    color: #797979;
-    cursor: pointer;
+.MapDiv{
+    padding: 0 10px;
 }
 
-.HelpeSearch input{
-    height: 49px;
-    border: 1px solid #919191;
-}
-
-.SupportListDiv h4{
-    font-size: 1.7rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.SupportPertpe{
-    border: 2px solid transparent;
-    border-radius: 6px;
-    padding: 18px 11px;
-    margin-bottom: 1rem !important;
-    text-align: justify;
-}
-
-.SupportPertpe:hover{
-    border: 2px solid var(--logoColor-2);
-    box-shadow:  0 0 10px #c5c5c5;
-}
-
-.SupportPertpe h6{
-    font-weight: bold;
-    font-size: 19px;
-    text-align: left;
-    color: var(--logoColor-1);
-}
-
-.SupportPertpe .SuportIcon{
-    box-shadow: 0 0 7px #d6d6d6;
-    border: 1px solid var(--logoColor-1);
-    padding: 15px;
-    border-radius: 50%;
-    margin-right: 1rem;
-    min-height: 72px;
-    min-width: 78px;
-    max-height: 72px;
-    max-width: 78px;
-    text-align: center;
+.MapDiv .mapouter{
+    border-radius: 9px;
     overflow: hidden;
 }
 
-.SupportPertpe i{
-    font-size: 35px;
+iframe{
+    width: 100%;
+}
+
+.ContactUSDiv h3{
+    font-size: 36px !important;
+    font-weight: 600;
     color: var(--logoColor-1);
-}
-/* support end */
-
-/* support single page start */
-.PathSuportSEcio{
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
-.PathSuport{
-    text-transform: capitalize;
-    padding-bottom: 20px ;
-    border-bottom: 1px solid black;
-}
-.PathSuport a:hover{
-    color: var(--logoColor-2);
-}
-
-.Question{
-    max-height: 250px;
-    overflow: scroll;
-    overflow-x: hidden;
-}
-
-.suportMain .Question button{
-    padding: 5px 5px;
-    margin-bottom: 0rem;
-    text-align: left;
+.Contactfrom{
+    max-width: 400px;
+    margin: auto;
     width: 100%;
-    font-style: italic;
 }
 
-.suportMain .Question .active{
-    background: none !important;
+.Contactfrom label{
+    margin-bottom: 0.5rem;
+    font-size: 19px;
+    font-weight: 500;
+    width: 100%;
 }
 
-.suportMain .AnswerDiv{
-    margin: 0;
-    padding: 0px 30px;
+.Contactfrom input{
+    width: 100%;
+    float: left;
+    border-radius: 21px;
+    height: 37px;
+    border: none;
+    padding: 0 20px;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 5px #920d038c;
 }
 
-.suportMain .Answers{
-    border-radius: 7px;
+.Contactfrom textarea{
+    width: 100%;
+    float: left;
+    max-width: 400px;
+    border-radius: 21px;
+    height: 100px;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 1rem;
+    outline: none;
+    box-shadow: 0 0 5px #920d038c;
+}
+
+.Contactfrom button{
+    padding: 8px 38px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: .7rem;
+    background-color: var(--logoColor-1);
+}
+
+.Contactfrom button:hover{
+    background-color: var(--logoColor-2);
+}
+
+.Contactfrom input:focus{
+    border: 1px solid #920d03de; 
+}
+
+.Contactfrom textarea:focus{
+    border: 1px solid #920d03de; 
+}
+
+.PerContactD{
     padding: 10px;
-    box-shadow: 0 0 10px #c2c2c2;
-    border: 1px solid #b0b0b0;
-    margin-top: 0 !important;
-    border-left: 5px solid #2c66af;
-    border-right: 5px solid #fe853d;
 }
 
-.suportMain .Answers div{
-    width: 100%;
+.ContactAdreSec{
+    max-width: 1200px;
+    background: #e6e6e6;
+    border-radius: 7px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
-.suportMain .Answers .active{
-    color: black !important;
+.AddressDiv{
+    display: flex;
 }
+
+.AddressI{
+    font-size: 28px;
+    color: var(--logoColor-1);
+    margin-right: 1rem;
+}
+
+.AddressDiv p{
+    margin-bottom: .5rem;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.AddressDiv{
+    margin-bottom: 20px;
+    margin-right: .5rem;
+}
+/* Contact Us end */
+
+/* About Us start */
+.AboutUsBanner{
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    max-height: 300px;
+}
+
+.BannerEihttext .HerosTextunder{
+    text-align: center;
+}
+
+.BannerEihttext .HerosText{
+    justify-content: right;
+    padding-right: 5%;
+}
+
+.AboutTextDiv h3{
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.AboutTextDiv p{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+/* About Us end */
+
 
 @media screen and (max-width: 1023px) {
     .PathSuport{
@@ -2731,6 +2722,16 @@ footer ul li{
 
     .AboutUsLeft{
         margin-bottom: 15px;
+    }
+
+    .MapDiv{
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    iframe{
+        width: 100%;
+        height: 200px;
     }
 }
 
