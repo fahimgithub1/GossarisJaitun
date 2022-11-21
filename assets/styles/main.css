@@ -47,7 +47,7 @@ ul li{
 }
 
 button{
-    background: var(--logoColor-2);
+    background: var(--logoColor-1);
     padding: 8px 20px;
     border: none;
     outline: none;
@@ -55,6 +55,10 @@ button{
     font-weight: bold;
     font-size: 20px;
     border-radius: 32px;
+}
+
+button:hover{
+    background: var(--logoColor-2);
 }
 
 /* Scroll */
@@ -805,6 +809,12 @@ input:focus,input:hover{
     border-radius: 50%;
     height: 15px;
     background-color: var(--logoColor-2);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover{
+    background-color: none !important;
+    background: transparent !important;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -2325,12 +2335,312 @@ iframe{
     margin-bottom: 20px;
     text-align: justify;
 }
+
+.AboutProvide{
+    background-color: var(--section-bg);
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 60px !important;
+}
+
+.AboutProvide h3{
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.PerProvide i{
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: var(--logoColor-1);
+}
+
+.PerProvide h4{
+    color: var(--logoColor-1);
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
 /* About Us end */
 
+/* Login page start */
+.LoginSection{
+    padding-top: 35px;
+}
+
+.LoginSection .container{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.LoginDiv{
+    max-width: 1200px;
+    background-color: var(--section-bg);
+    border-radius: 12px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgb(207, 207, 207);
+}
+
+.ImageSite{
+    padding: 0;
+}
+
+.ImageSite img{
+    height: 100%;
+    width: 100%;
+}
+
+.FromSite{
+    padding: 30px 10px;
+}
+
+.FromSite h4{
+    font-weight: 600;
+    color: var(--logoColor-1);
+    margin-bottom: 30px;
+}
+
+.loginForm{
+    max-width: 400px;
+    margin: auto;
+}
+
+.loginForm label,
+.loginForm input{
+    display: block;
+    width: 100%;
+}
+
+.loginForm label{
+    margin-bottom: 0.5rem;
+    font-size: 19px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.loginForm input{
+    margin-bottom: 1rem;
+    border: none;
+    box-shadow: 0 0 5px #920d038c;
+}
+
+.loginForm input:focus{
+    border: 1px solid var(--logoColor-1);
+}
+
+.loginForm button{
+    font-weight: 500;
+    padding: 7px 33px;
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.SwitchOthers{
+    margin-top: 30px;
+}
+
+.SwitchOthers a{
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.SwitchOthers a:not(:last-child){
+    margin-right: .5rem;
+    padding-right: .5rem;
+    border-right: 2px solid black;
+}
+
+.orLogin{
+    margin-top: 35px;
+}
+
+.HrOr{
+    position: relative;
+}
+
+.HrOr span{
+    position: absolute;
+    top: -17px;
+    left: 49%;
+    background-color: var(--section-bg);
+    padding: 5px;
+    font-weight: 600px;
+}
+
+.SocialLogin{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SocialLogin div{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    box-shadow: 0 0 5px #9f9f9f;
+    font-size: 22px;
+}
+
+.SocialLogin div:not(:last-child){
+    margin-right: .5rem;
+}
+/* Login page end */
+
+/* SingIn start */
+.RegisterImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RegisterImage img{
+    height: 480px;
+    width: auto;
+}
+/* SingIn end */
+
+/* forgot passoward start */
+.Forgot{
+    padding-top: 40px;
+}
+
+.ForgetSection{
+    background: none;
+    box-shadow: none;
+    max-width: 500px;
+    margin: auto;
+    background-color: var(--section-bg);
+    box-shadow: 0 0 5px rgb(207, 207, 207);
+}
+/* forgot passoward end */
+
+/* cart page start */
+.table-responsive{
+    border: 1px solid var(--logoColor-1);
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.table-responsive table{
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.table-responsive thead{
+    border-bottom: 1px solid var(--logoColor-1);
+}
+
+.table-responsive tr:not(:last-child){
+    border-bottom: 1px solid var(--logoColor-1);
+}
+
+.product-count .Incement{
+    width: 141px;
+    height: 35px;
+    padding: 0 5px;
+}
+
+.product-count .Incement .Plus,
+.product-count .Incement .Minnus{
+    font-size: 19px;
+    height: 28px;
+    width: 28px;
+    padding: 0;
+}
+
+.product-count .Incement .Plus:hover,
+.product-count .Incement .Minnus:hover{
+    background-color: white;
+    color: black;
+}
+
+.cart-delete{
+    padding:5px  10px !important;
+    border: 1px solid var(--logoColor-1);
+    background: none !important;
+    color: var(--logoColor-1);
+}
+
+.cart-delete:hover{
+    background: var(--logoColor-2) !important;
+    color: white;
+    border: transparent;
+}
+
+.product-img{
+    height: 49px;
+    width: 51px;
+    border-radius: 5px;
+}
+
+.btn-box{
+    background: var(--logoColor-1);
+    width: 222px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 11px;
+    color: white;
+}
+
+.btn-box a{
+    color: white;
+}
+
+.btn-box:hover{
+    background: var(--logoColor-2);
+}
+
+.CostCart{
+    border: 1px solid black;
+    border-radius: 12px;
+    padding-bottom: 20px;
+}
+
+.CostCart h4{
+    padding: 6px 14px;
+    padding: 5px;
+    font-size: 21px;
+    font-weight: 500;
+    color: var(--logoColor-1);
+    border-bottom: 1px solid black;
+}
+
+.TotalCost{
+    padding: 5px 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.AllCost{
+    border-bottom: 1px dotted var(--logoColor-1);
+    margin-bottom: .7rem;
+}
+
+.ShopBtn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ShopBtn .btn-box{
+    margin-bottom: .5rem;
+}
+/* cart page end */
 
 @media screen and (max-width: 1023px) {
     .PathSuport{
         padding-top: 20px;
+    }
+
+    .CostDiv{
+        margin-bottom: 20px;
     }
 }
 
@@ -2417,6 +2727,30 @@ iframe{
         padding: 8px 18px;
         border-radius: 7px;
         font-size: 16px;
+    }
+
+    .LoginSection {
+        padding-top: 20px;
+    }
+
+    .ImageSite{
+        padding-top: 23px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ImageSite img {
+        width: 50%;
+        margin: auto;
+        border-radius: 12px;
+    }
+
+    .RegisterImage img{
+        height: auto;
+    }
+
+    .table-responsive {
+        margin-bottom: 24px;
     }
 }
 /* Blog page End */
@@ -2556,6 +2890,17 @@ iframe{
 
     .BlogBanner{
         margin-top: 10px;
+    }
+
+    .AboutProvide h3{
+        margin-bottom: 10px;
+    }
+    
+    .AboutProvide{
+        margin-top: 40px;
+        padding-top: 23px !important;
+        padding-bottom: 10px;
+        margin-bottom: 20px !important;
     }
 }
 
