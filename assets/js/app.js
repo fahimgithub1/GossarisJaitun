@@ -56,3 +56,10 @@ CatagorisIcinHideCros2222.addEventListener("click", function() {
     document.getElementById("CatagorisIcinHide").style.display = "block";
     document.getElementById("CatagorisIcinHideCros").style.display = "none";
 });
+
+// date function
+const date = new Date()
+const year = date.getFullYear()
+
+const showYear = document.getElementById('date')
+showYear.innerHTML = year
