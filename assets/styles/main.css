@@ -212,6 +212,9 @@ input{
     float: right;
     border-radius: 27px;
     border: 1px solid #920d03;
+    font-size: 17px;
+    color: #000;
+    padding-left: 15px;
 }
 
 input:focus,input:hover{
@@ -410,6 +413,7 @@ input:focus,input:hover{
 .horizontal-menu {
     display: flex;
     align-items: center;
+    padding-left: 35px;
     background-color: var(--logoColor-2);
 }
 
@@ -877,6 +881,80 @@ input:focus,input:hover{
 }
 /* carusle end */
 
+.ServicesIconMainDIV{
+    border: 1px solid #d5d5d5;
+    padding: 10px 5px;
+    padding-bottom: 5px;
+    border-radius: 7px;
+}
+
+.PerServocesDiv{
+    margin-bottom: 0.5rem;
+    align-items: center;
+}
+
+.PerServocesDiv .Freeshoping{
+    background-color: rgb(255 37 37);
+}
+
+.PerServocesDiv .Policy{
+    background-color: #2cc97a;
+}
+
+.PerServocesDiv .Support{
+    background-color: #b487db;
+}
+
+.PerServocesDiv .Points{
+    background-color: var(--logoColor-2);
+}
+
+.PerServocesDiv .payment{
+    background-color: #72a4ff;
+}
+
+.ServicesImg{
+    background-color: var(--logoColor-1);
+    margin-right: 7px;
+    height: 60px;
+    border-radius: 4px;
+    display: flex;
+    min-width: 60px;
+}
+
+.ServicesImg a{
+    margin: auto;
+}
+
+.ServicesImg a i{
+    font-size: 38px;
+    color: white;
+}
+
+.ServicesText{
+    color: #888;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.ServicesText .servicesTitel{
+    text-transform: uppercase;
+}
+
+.ServicesText a:hover{
+    color: var(--logoColor-2);
+}
+
+.servicesP{
+    font-size: 13px;
+}
+
+@media screen and (min-width: 1200px) {
+    .W20{
+        width: 20%;
+    }
+}
+
 /* Brand section start */
 .Titelh4{
     margin-bottom: 0;
@@ -984,6 +1062,17 @@ input:focus,input:hover{
     .FoductList{
         padding: 7px;
         padding-bottom: 0;
+    }
+
+    .ProductContiner .Hadline{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .ProductContiner .FoductList{
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 10px;
     }
 
     .PerProductPadding{
@@ -1102,6 +1191,10 @@ input:focus,input:hover{
         width: 40px;
         background-color: var(--logoColor-1);
         color: white;
+    }
+    
+    .container.ProductContiner{
+        margin-bottom: 20px;
     }
 /* vegetabels section end */
 
@@ -1319,6 +1412,7 @@ footer ul li{
 
 .LastFooter{
     color: #979797;
+    margin-bottom: 16px;
 }
 
 .LastFooter a{
@@ -1518,6 +1612,11 @@ footer ul li{
         font-size: 19px;
     }
 
+    .ReviewDiv2{
+        height: 350px;
+        overflow-x: auto;
+    }
+
     .ReviewDiv label,
     .ReviewDiv input{
         display: block !important;
@@ -1539,6 +1638,7 @@ footer ul li{
         border-radius: 5px;
         padding: 10px;
         outline: none;
+        margin-bottom: .5rem;
         border: 1px solid var(--logoColor-1);
     }
 
@@ -1812,6 +1912,11 @@ footer ul li{
 .tab-content .PerProductPadding{
     margin-bottom: 20px;
 }
+
+.CategoryBanner{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 /* Catagoris Page end */
 
 /* Bloge Page start */
@@ -2017,6 +2122,11 @@ footer ul li{
 .BlogBanner{
     border: 1px solid var(--logoColor-1);
 }
+
+.BlogBnnar {
+    padding-top: 20px !important;
+    padding-bottom: 30px;
+}
 /* Blog page end */
 
 /* Blog Daitles start */
@@ -2210,15 +2320,23 @@ footer ul li{
 
 .MapDiv{
     padding: 0 10px;
+    height: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    width: 100%;
 }
 
 .MapDiv .mapouter{
     border-radius: 9px;
     overflow: hidden;
+    /* height: 80%;
+    width: 90%; */
 }
 
 iframe{
     width: 100%;
+    height: 100%;
 }
 
 .ContactUSDiv h3{
@@ -2453,11 +2571,6 @@ iframe{
     margin-top: 30px;
 }
 
-.SwitchOthers a{
-    font-style: italic;
-    text-decoration: underline;
-}
-
 .SwitchOthers a:not(:last-child){
     margin-right: .5rem;
     padding-right: .5rem;
@@ -2652,6 +2765,204 @@ iframe{
 }
 /* trams and condition start*/
 
+/* order traking page start*/
+.OrderSection {
+    color: #000;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    max-width: 800px;
+}
+
+.icon-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.icon-content p{
+    margin-bottom: 0;
+}
+
+.icon-content img{
+    width: 74px;
+    height: auto;
+}
+
+.icon-content {
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    z-index: 0;
+    background-color: var(--section-bg);
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.card:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.top {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-white{
+    color: white;
+    font-weight: 500;
+    padding: 7px 33px;
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.btn-white:hover{
+    color: white;
+    background-color: var(--logoColor-2);
+}
+
+/*Icon progressbar*/
+#progressbar {
+    margin-bottom: 10px;
+    overflow: hidden;
+    color: #455A64;
+    padding-left: 0px;
+    margin-top: 30px;
+} 
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 13px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+}
+
+#progressbar .step0:before {
+    font-family: FontAwesome;
+    content: "\f10c";
+    color: #fff;
+}
+
+#progressbar li:before {
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    background: var(--logoColor-1) !important;
+    border-radius: 50%;
+    margin: auto;
+    padding: 0px;
+}
+
+/*ProgressBar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 12px;
+    background: var(--servocehover);
+
+    position: absolute;
+    left: 0;
+    top: 16px;
+    z-index: -1;
+}
+
+#progressbar li:last-child:after {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    left: -50%;
+}
+
+#progressbar li:nth-child(2):after, #progressbar li:nth-child(3):after {
+    left: -50%;
+}
+
+#progressbar li:first-child:after {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    left: 50%;
+}
+
+#progressbar li:last-child:after {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#progressbar li:first-child:after {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/*Color number of the step and the connector before it*/
+#progressbar li.active:before, #progressbar li.active:after {
+    background: var(--logoColor-1);
+}
+
+#progressbar li.active:before {
+    font-family: FontAwesome;
+    content: "\f00c";
+}
+
+.OrderSection .icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
+}
+
+.icon-content { 
+    padding-bottom: 20px;
+}
+
+.ProductTracking img{
+    width: 60px;
+    border-radius: 6px;
+    margin-top: .5rem;
+}
+
+.ProductTracking span{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--logoColor-1);
+}
+
+.ProductTracking span .ti{
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: .8rem !important;
+}
+
+.CancleBtn{
+    padding: 7px !important;
+    font-size: 17px;
+    width: 94px;
+    margin-bottom: .5rem;
+    margin-left: calc(100%-94px) !important;
+    float: right;
+}
+
+.CancBTnDIv{
+    display: flex;
+
+}
+
+@media screen and (max-width: 992px) {
+    /* .icon-content {
+        width: 50%;
+    } */
+}
+/* order traking page end */
+
 @media screen and (max-width: 1023px) {
     .PathSuport{
         padding-top: 20px;
@@ -2830,6 +3141,10 @@ iframe{
     .PopulerProduct{
         margin-bottom: -20px;
     }
+
+    .VagetableSection{
+        padding-top: 23px;
+    }
 }
 
 /* nav for tabe and mobile start */
@@ -2840,6 +3155,16 @@ iframe{
 
     .BlogMainSection{
         padding-top: 40px;
+    }
+
+    .cartPading2{
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .productBanner{
+        padding-bottom: 20px;
+        margin-top: 55px;
     }
 }
 
@@ -2883,7 +3208,13 @@ iframe{
     }
 
     .ProductContiner{
-        padding: 0;
+        padding-left: 7px;
+        padding-right: 10px;
+        margin: auto;
+    }
+
+    .ProductContiner .CatagorySection {
+        padding-top: 20px;
     }
 
     .HerosTextunder h5{
@@ -2923,6 +3254,19 @@ iframe{
         padding-top: 23px !important;
         padding-bottom: 10px;
         margin-bottom: 20px !important;
+    }
+    
+    .VagetableSection{
+        padding-top: 10px;
+    }
+
+    .productBanner{
+        padding-top: 20px;
+    }
+
+    .ContactAdreSec {
+        padding-top: 20px;
+        padding-bottom: 0px;
     }
 }
 
@@ -2976,7 +3320,28 @@ iframe{
     
     .PerBlogDIvCol:not(:last-child){
         padding-bottom: 15px;
-    }  
+    } 
+
+    .container.ProductContiner{
+        margin-bottom: 20px;
+    }
+
+    .MainCatagoriDiv{
+        padding-right: 0;
+    }
+
+    .AllProductImg{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .BlogBnnar {
+        padding-bottom: 10px;
+    }
+    
+    .ReolyForm{
+        margin-bottom: 0px !important;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -3003,11 +3368,6 @@ iframe{
     .BannerDiv{
         padding-left: 5px;
         padding-right: 10px;
-    }
-
-    .BannerImage{
-        margin-bottom: 20px;
-        padding: 0 !important;
     }
 
     .LastWeekProducr{
@@ -3104,6 +3464,71 @@ iframe{
     .cartPadding{
         padding: 0;
     }
+
+    .card:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .icon{
+        width: 39px !important;
+        height: 42px !important;
+        margin: auto;
+        margin-bottom: 5px !important;
+    }
+
+    .VagetableSection{
+        padding-top: 0px !important;
+        margin-top: 0;
+    }
+
+    .ContactAdreSec {
+        padding-top: 10px;
+    }
+
+    .AddressDiv {
+        margin-bottom: 0px;
+    }
+
+    .AboutUsRightRM{
+        margin-top: 20px;
+    }
+
+    .BlogBnnar{
+        padding-top: 0px !important;
+    }
+
+    .AboutUsLeft img{
+        margin-bottom: .5rem;
+    }
+
+    .DaitlesPerDIv:not(:last-child){
+        margin-bottom: 10px;
+    }
+    
+    .ReolyForm{
+        margin-bottom: 20px !important;
+    }
+
+    .RightPerDiv{
+        margin-bottom: 10px;
+    }
+
+    .PerBlogDIv {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .DaitlesPerDIv {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .BlogComment {
+        max-width: 850px;
+        margin: auto;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
 }
 
 @media screen and (max-width: 1023px) and (min-width: 685px){
@@ -3141,6 +3566,41 @@ iframe{
 
     .LatestNews h4{
         font-size: 16px !important;
+    }
+
+    .icon-content{
+        display: block;
+        text-align: center;
+    }
+
+    #progressbar li:after{
+        content: '';
+        height: 10px;
+        top: 14px;
+    }
+
+    #progressbar li:before {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 15px;
+    }
+
+    #progressbar li {
+        font-size: 9px;
+        font-weight: 400;
+    }
+
+    .OrderTop{
+        display: block;
+    }
+
+    .ProductTracking{
+        margin-bottom: 10px;
+    }
+
+    .BlogBnnar{
+        padding-top: 0px !important;
     }
 }
 
@@ -3198,11 +3658,45 @@ iframe{
     .DaitlesPerDIv img{
         max-height: 200px;
     }
+
+    .OrderSection{
+        padding: 0 8px;
+    }
+
+    .ProductContiner .CatagorySection{
+        padding-top: 20px;
+    }
+
+    .ProductContiner{
+        margin-bottom: 20px;
+    }
+
+    .ProductContiner .row .Titelh4{
+        margin-bottom: 2px;
+    }
+
+    .CatagorySection {
+        padding-bottom: 10px;
+    }
+
+    .col-lg-6.col-md-6.col-sm-6.BannerDiv:not(:last-child) {
+        margin-bottom: 16px;
+    }
 }
 
 @media screen and (max-width: 599px) {
     .owl-item .item {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .icon-content{
+        font-size: 12px !important;
+    }
+
+    .OrderSection{
+        padding: 0 5px;
     }
 }
 
