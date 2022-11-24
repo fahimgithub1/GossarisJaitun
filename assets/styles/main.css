@@ -395,6 +395,7 @@ input:focus,input:hover{
 .BottomNev{
     /* border-bottom: 2px solid var(--logoColor-2); */
     background-color: var(--logoColor-2) !important;
+    z-index: 999;
 }
 
 .DestopNavCtagoris{
@@ -690,6 +691,13 @@ input:focus,input:hover{
     padding: 3px;
 }
 
+.HotDeals{
+    height: 100%;
+    background: linear-gradient(28deg, #920d03, #de7d2d);
+    padding: 10px;
+    border: 1px solid #920d03;
+    margin-top: -1px;
+}
 /* nav for tabe and mobile end */
 /* navigatin end */
 
@@ -889,12 +897,14 @@ input:focus,input:hover{
 }
 
 .PerServocesDiv{
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
     align-items: center;
 }
 
 .PerServocesDiv .Freeshoping{
     background-color: rgb(255 37 37);
+    max-width: 100px;
+    margin-bottom: 0.5rem;
 }
 
 .PerServocesDiv .Policy{
@@ -920,6 +930,9 @@ input:focus,input:hover{
     border-radius: 4px;
     display: flex;
     min-width: 60px;
+    max-width: 100px;
+    /* margin: auto; */
+    margin-bottom: .5rem;
 }
 
 .ServicesImg a{
@@ -935,6 +948,7 @@ input:focus,input:hover{
     color: #888;
     font-weight: 500;
     font-size: 14px;
+    text-align: center;
 }
 
 .ServicesText .servicesTitel{
@@ -1085,11 +1099,11 @@ input:focus,input:hover{
         overflow: hidden;
         box-shadow: 0 0 5px #c9c9c9;
         background-color: white;
-        border: 2px solid transparent;
+        border: 1px solid transparent;
     }
 
     .Product:hover{
-        border: 2px solid var(--logoColor-2);
+        border: 1px solid var(--logoColor-2);
     }
 
     .ProductImg{
@@ -1098,6 +1112,11 @@ input:focus,input:hover{
         margin-bottom: 0.5rem;
         border-radius: 7px;
         /* border: 1px solid var(--logoColor-1); */
+    }
+
+    .ProductImg img{
+        height: 100%;
+        width: 100%;
     }
 
     .FoductList img{
@@ -1197,6 +1216,55 @@ input:focus,input:hover{
         margin-bottom: 20px;
     }
 /* vegetabels section end */
+
+/* offer page start */
+.ProductImg{
+    position: relative;
+}
+
+.TimeCounting{
+    position: absolute;
+    background-color: var(--logoColor-2);
+    width: 79%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    font-weight: 600;
+    margin-top: -33px;
+    width: 150px;
+    left: calc((100% - 150px)/2);
+    border-radius: 12px;
+    color: white;
+}
+
+.OfferPage .ProductImg{
+    position: relative;
+}
+
+.ProductSection{
+    margin-bottom: -20px;
+}
+
+.OfferPage .DisPersent{
+    position: absolute;
+    top: 0;
+    z-index: 990;
+    top: 2.5px;
+}
+
+.OfferPage a:hover .TimeCounting{
+    color: rgb(255, 255, 255);
+}
+
+.TimeCounting:hover{
+    color: rgb(255, 255, 255);
+}
+
+.OfferPage .productText{
+    margin-top: 33px;
+}
+/* offer page end */
 
 /* add banner start */
 .BannerImage{
@@ -1413,6 +1481,8 @@ footer ul li{
 .LastFooter{
     color: #979797;
     margin-bottom: 16px;
+    margin-top: 36px;
+    padding-top: 0 !important;
 }
 
 .LastFooter a{
@@ -2444,6 +2514,7 @@ iframe{
     border-radius: 12px;
     overflow: hidden;
     max-height: 300px;
+    padding: 0;
 }
 
 .BannerEihttext .HerosTextunder{
@@ -2647,6 +2718,12 @@ iframe{
 /* forgot passoward end */
 
 /* cart page start */
+.CartTitle{
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--logoColor-1);
+}
+
 .table-responsive{
     border: 1px solid var(--logoColor-1);
     border-radius: 12px;
@@ -2971,6 +3048,10 @@ iframe{
     .CostDiv{
         margin-bottom: 40px;
     }
+
+    .LastFooter{
+        margin-top: 0px;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -3085,6 +3166,10 @@ iframe{
     .CostDiv{
         margin-bottom: 20px;
     }
+
+    .LastFooter{
+        margin-top: 0px;
+    }
 }
 /* Blog page End */
 
@@ -3098,6 +3183,20 @@ iframe{
 @media screen and (min-width: 1200px) {
     .Compute-20{
         width: 20%;
+    }
+
+    .OfferPage .Product{
+        margin-bottom: 20px;
+    }
+    
+    .PerServocesDiv .Freeshoping{
+        margin: auto;
+        margin-bottom: .5rem;
+    }
+    
+    .PerServocesDiv .ServicesImg{
+        margin: auto;
+        margin-bottom: .5rem;
     }
 }
 
@@ -3145,6 +3244,20 @@ iframe{
     .VagetableSection{
         padding-top: 23px;
     }
+
+    .PerServocesDiv{
+        display: flex;
+        align-items: start;
+    }
+
+    .PerServocesDiv .Freeshoping{
+        max-width: min-content;
+        margin: none;
+    }
+
+    .ServicesText{
+        text-align: left;
+    }
 }
 
 /* nav for tabe and mobile start */
@@ -3158,13 +3271,13 @@ iframe{
     }
 
     .cartPading2{
-        padding-top: 40px !important;
+        padding-top: 6px !important;
         padding-bottom: 40px !important;
     }
 
     .productBanner{
         padding-bottom: 20px;
-        margin-top: 55px;
+        margin-top: 10px;
     }
 }
 
@@ -3681,6 +3794,10 @@ iframe{
 
     .col-lg-6.col-md-6.col-sm-6.BannerDiv:not(:last-child) {
         margin-bottom: 16px;
+    }
+
+    .CartTitle {
+        margin-bottom: 21px;
     }
 }
 
