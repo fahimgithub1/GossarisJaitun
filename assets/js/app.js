@@ -63,3 +63,19 @@ const year = date.getFullYear()
 
 const showYear = document.getElementById('date')
 showYear.innerHTML = year
+
+
+// Address addd show  AddAdressBtnO
+    function FunAddAdressBtnO(){
+        let addressInfoFrom = document.querySelector(".addressInfoFrom");
+        let collectedAddressA = document.querySelector(".collectedAddress");
+        collectedAddressA.style.display = "none";
+        addressInfoFrom.style.display = "block";
+    }
+    
+    function FunaddressInfoFrom(){
+        let addressInfoFrom = document.querySelector(".addressInfoFrom");
+        let collectedAddressA = document.querySelector(".collectedAddress");
+        collectedAddressA.style.display = "block";
+        addressInfoFrom.style.display = "none";
+    }

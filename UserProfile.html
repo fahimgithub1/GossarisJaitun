@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jatuna GLOSSARY</title>
+        <!-- <title>Jatuna GLOSSARY</title> -->
         <link rel="shortcut icon" href="./assets/images/jatuna-logo-meat.png">
 
         <!-- font-awesome -->
@@ -12,17 +12,20 @@
 
         <!-- google fronts -->
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        
+
+        <!-- OWL carosule link -->
+        <link rel="stylesheet" href="./assets/styles/owl.carousel.min.css">
+        <link rel="stylesheet" href="./assets/styles/owl.theme.default.min.css">
+
         <!-- bootstrap file link -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    
+
         <!-- custom css -->
         <link rel="stylesheet" href="./assets/styles/main.css">
     </head>
 
     <body>
-        
         <!-- Navber Start -->
         <nav>
             <!--Navber For Laptop And Computer -->
@@ -318,7 +321,7 @@
                                     <li><a href="./Blog.html">Blog</a></li>
                                     <li><a href="./Categories.html">Product</a></li>
                                     <li><a href="./OrderTrakingForm.html">Order Traking</a></li>
-                                    <li><a href="./HotDeals.html">Hot Deals</a></li>
+                                    <li class="HotDeals"><a href="./HotDeals.html">Hot Deals</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -503,506 +506,631 @@
         </nav>
         <!-- Navber End -->
 
-        <!-- Heros start -->
-        <section class="HerosSection container">
-            <div class="row">
-                <div class="mainProdictDiv">
-                    <div class="ProductBg">
-                        <div class="BgBlack">
-                            <!-- Product Name -->
-                            <h1>Grand Old Parr Blended Scotch Whisky</h1>
-                        </div>
-                    </div>
-
-                    <div class="ProductDaitlesdiv">
-                        <div class="row">
-                            <div class="col-lg-5 col-md-5 PeoudctBigImgage">
-                                <img src="./assets/images/Cooking-Essential/Rice.jpg" alt="">
-                            </div>
-
-                            <div class="col-lg-7 col-md-7 RightSide">
-                                <p  class="PriceP"> 200Tk <span class="discount">250TK</span></p>
-                                <!-- <p class="SmalDisciption">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit in quos quo odit possimus, voluptates deserunt sunt iusto perferendis consequuntur tempora provident maiores asperiores voluptas laborum ipsum molestiae aliquid ea!</p> -->
-                            
-                                <div class="CataTagId">
-                                    <p class="Category"><span>Category:</span> Alcohol</p>
-                                    <p class="Category"><span>Tag:</span> premium Quality</p>
-                                    <p class="Category"><span>PRoduct ID:</span> 2215</p>
-                                </div>
-
-                                <div class="VariantColor">
-                                    <div class="ProductColor">
-                                        <span>Color:</span>
-                                        <div class="BtnsDiv">
-                                            <button class="ColorBtn1"></button>
-                                            <button class="ColorBtn2"></button>
-                                            <button class="ColorBtn3"></button>
-                                        </div>
-                                    </div>
-
-                                    <div class="Variant">
-                                        <span>Variant:</span>
-                                        <div class="VariantImgs">
-                                            <div class="VarImg">
-                                                <img src="./assets/images/Dairy-Bakery/Chips2.jpg" alt="">
-                                            </div>
-                                            <div class="VarImg">
-                                                <img src="./assets/images/Dairy-Bakery/Chips2.jpg" alt="">
-                                            </div>
-                                            <div class="VarImg">
-                                                <img src="./assets/images/Dairy-Bakery/Chips2.jpg" alt="">
-                                            </div>
-                                            <div class="VarImg">
-                                                <img src="./assets/images/Dairy-Bakery/Chips2.jpg" alt="">
-                                            </div>
-                                            <!-- <div class="VarImg">
-                                                <img src="./assets/images/Dairy-Bakery/Chips2.jpg" alt="">
-                                            </div>
-                                            <div class="VarImg">
-                                                <img src="./assets/images/Dairy-Bakery/Chips2.jpg" alt="">
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="ProductBtnIncement text-center">
-                                    <div class="Incement">
-                                        <span class="Plus">+</span>
-                                        <span>1</span>
-                                        <span class="Minnus">-</span>
-                                    </div>
-                                </div>
-
-                                <div class="ProductBtn">
-                                    <button class="CartBtn"><i class="fa fa-cart-shopping"></i> Add To Cart</button>
-                                    <button><i class="fa fa-bag-shopping"></i> Buy Now</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Review and disciption -->
-                        <div class="ReviewAndDis">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
-                                        Desciption
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
-                                        Review
-                                    </button>
-                                </li>
-                            </ul>
-
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane Disciption fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                                    11Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, officiis nostrum? Eos aut ipsam nemo similique? Non laboriosam culpa deserunt dolor, error ut beatae pariatur sequi facilis! Eos, aliquid dolorem?
-                                    11Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, officiis nostrum? Eos aut ipsam nemo similique? Non laboriosam culpa deserunt dolor, error ut beatae pariatur sequi facilis! Eos, aliquid dolorem?
-                                </div>
-
-                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6 ReviewDiv text-center">
-                                            <h4 class="text-left">Give Reviews</h4>
-
-                                            <form action="" class="text-left">
-                                                <div>
-                                                    <label for="name">Name</label>
-                                                    <input type="name" placeholder="">
-                                                </div>
-                                                
-                                                <div>
-                                                    <label for="email">Email</label>
-                                                    <input type="email" placeholder="">
-                                                </div>
-                                                
-                                                <div>
-                                                    <label for="massage">Massage</label>
-                                                    <textarea name="Massage" placeholder="type massage"></textarea>
-                                                </div>
-                                            </form>
-
-                                            <div class="PatingDiv text-left">
-                                                <p>Rating</p>
-                                                <ul>
-                                                    <li><i class="fa-regular fa-star"></i></li>
-                                                    <li><i class="fa-regular fa-star"></i></li>
-                                                    <li><i class="fa-regular fa-star"></i></li>
-                                                    <li><i class="fa-regular fa-star"></i></li>
-                                                    <li><i class="fa-regular fa-star"></i></li>
-                                                </ul>
-                                            </div>
-
-                                            <button class="revied">Submit</button>
-                                        </div>
-
-                                        <div class="col-lg-6 col-md-6 ReviewDiv ReviewDiv2 text-center">
-                                            <h4 class="text-left">Reviews</h4>
-                                            
-                                            <div class="PersonReview">
-                                                <div class="PersonImg">
-                                                    <img src="./assets/images/userimg1.png" alt="">
-                                                </div>
-
-                                                <div>
-                                                    <p class="perosName">Jaitun</p>
-                                                    <div class="PatingDiv text-left">
-                                                        <!-- <p>Rating</p> -->
-                                                        <ul>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                    <p class="pesonReview">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="PersonReview">
-                                                <div class="PersonImg">
-                                                    <img src="./assets/images/userimg1.png" alt="">
-                                                </div>
-
-                                                <div>
-                                                    <p class="perosName">Jaitun</p>
-                                                    <div class="PatingDiv text-left">
-                                                        <!-- <p>Rating</p> -->
-                                                        <ul>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                    <p class="pesonReview">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="PersonReview">
-                                                <div class="PersonImg">
-                                                    <img src="./assets/images/userimg1.png" alt="">
-                                                </div>
-
-                                                <div>
-                                                    <p class="perosName">Jaitun</p>
-                                                    <div class="PatingDiv text-left">
-                                                        <!-- <p>Rating</p> -->
-                                                        <ul>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                            <li><i class="fa-regular fa-star"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                    <p class="pesonReview">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- heros end -->
-
-        <!-- related Product start -->
-        <section class="SectionPadding CatagoriPadding PddingMannage RelatedProdSec">
+        <!-- user profile start -->
+        <section class="HerosSection">
             <div class="container">
                 <div class="row">
-                    <div class="Hadline"> 
-                        <div class="Titelh4">
-                            <h4>Related Product</h4>
-                        </div>
+                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-12 UserMenu">
+                        <div class="nav tablist" id="nav-tab" role="tablist">
+                            <!-- 11111111 -->
+                            <button 
+                                    class="nav-link active text-white mb-2" id="nav-Account" data-bs-toggle="tab" 
+                                    data-bs-target="#Account" type="button" role="tab" aria-controls="Account" 
+                                    aria-selected="true"
+                            >
+                                My Account
+                            </button>
+        
+                            <!-- 2222222222 -->
+                            <button 
+                                    class="nav-link text-white mb-2" id="nav-Orders" data-bs-toggle="tab" data-bs-target="#Orders" 
+                                    type="button" role="tab" aria-controls="Orders" aria-selected="false"
+                            >
+                                My Orders
+                            </button>
+        
+                            <!-- 333333333333333 -->
+                            <button 
+                                    class="nav-link text-white mb-2" id="nav-Wish-List" data-bs-toggle="tab" 
+                                    data-bs-target="#Wish-List" 
+                                    type="button" role="tab" aria-controls="Wish-List" aria-selected="false"
+                            >
+                                My Wish List
+                            </button>
 
-                        <div class="SeeAll text-right">
-                            <a href="./Categories.html">
-                                See All
-                            </a>
+                            <!-- 4444444444444444 -->
+                            <button 
+                                    class="nav-link text-white mb-2" id="nav-Address-Book" data-bs-toggle="tab" 
+                                    data-bs-target="#Address-Book" type="button" role="tab" aria-controls="Address-Book" 
+                                    aria-selected="false"
+                            >
+                                Address Book
+                            </button>
+
+                            <!-- 66666666666 -->
+                            <button 
+                                    class="nav-link text-white mb-2" id="nav-Account-Information" data-bs-toggle="tab" 
+                                    data-bs-target="#Account-Information" 
+                                    type="button" role="tab" aria-controls="Account-Information" aria-selected="false"
+                            >
+                                Account Information
+                            </button>
+
+                            <!-- /777777777 -->
+                            <button 
+                                    class="nav-link text-white mb-2" id="nav-Payment-Methods" data-bs-toggle="tab" 
+                                    data-bs-target="#Payment-Methods" 
+                                    type="button" role="tab" aria-controls="Payment-Methods" aria-selected="false"
+                            >
+                                Stored Payment Methods
+                            </button>
+                            
+                            <!-- 8888888888 -->
+                            <!-- <button 
+                                    class="nav-link w-100  text-white mb-2" id="nav-Product-Reviews" data-bs-toggle="tab" 
+                                    data-bs-target="#Product-Reviews" type="button" role="tab" aria-controls="#Product-Reviews" 
+                                    aria-selected="true"
+                            >
+                                My Product Reviews
+                            </button> -->
+
+                            <!-- 999999999999 -->
+                            <!-- <button 
+                                    class="nav-link w-100  text-white mb-2" id="nav-Newsletter" data-bs-toggle="tab" 
+                                    data-bs-target="#Newsletter" 
+                                    type="button" role="tab" aria-controls="Newsletter" aria-selected="false"
+                            >
+                                Newsletter Subscriptions
+                            </button> -->
+
+                            <!-- 5555555555555555 -->
+                            <!-- <button 
+                                    class="nav-link w-100  text-white mb-2" id="nav-Information" data-bs-toggle="tab" 
+                                    data-bs-target="#Information" 
+                                    type="button" role="tab" aria-controls="Information" aria-selected="false"
+                            >
+                                    Information
+                            </button> -->
+
+                            <!-- 1010101010 -->
+                            <!-- <button 
+                                    class="nav-link w-100  text-white mb-2" id="nav-Downloadable-Products" data-bs-toggle="tab" 
+                                    data-bs-target="#Downloadable-Products" 
+                                    type="button" role="tab" aria-controls="Downloadable-Products" aria-selected="false"
+                            >
+                                My Downloadable Products
+                            </button> -->
                         </div>
                     </div>
+                    
+                    <div class="col-xl-10 col-lg-9 col-md-9 col-sm-12 MenuDaitels tab-content col-10" id="nav-tabContent"
+                     >
+                        <!-- MY ACCOUNT-->
+                        <div class="tab-pane fade show active" id="Account" role="tabpanel" aria-labelledby="nav-Account" tabindex="0">
+                            <h5>MY ACCOUNT</h5>
 
-                    <div class="FoductList">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-4 col-sm-6 moibe-50 carosul Compute-20 PerProductPadding">
-                                <a href="./Product_Single_Page.html">
-                                    <div class="Product">
-                                        <!-- discount persentage start -->
-                                        <div class="DisPersent">
-                                            10%
-                                        </div>
-                                        <!-- discount persentage end -->
-    
-                                        <div class="ProductImg">
-                                            <img src="./assets/images/Cooking-Essential/flour.jpg" alt="">
-                                        </div>
-    
-                                        <div class="productText">
-                                            <div class="NamePrice">
-                                                <p class="Name">
-                                                    Native Organic Papaya
-                                                </p>
-                                                <!-- <br> -->
-                                                <span class="Quantity">
-                                                    In Stock <span>1KG</span>
-                                                </span>
-    
-                                                <div class="Price">
-                                                    <span class="discount">180tk</span>
-                                                    150tk
-                                                </div>
-                                            </div>
-    
-                                            <div class="ProductBtnIncement text-center">
-                                                <div class="Incement">
-                                                    <span class="Plus">+</span>
-                                                    <span>1</span>
-                                                    <span class="Minnus">-</span>
-                                                </div>
-                                                
-                                                <button>
-                                                    add to cart
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            
-                            <div class="col-lg-3 col-md-4 col-sm-6 moibe-50 carosul Compute-20 PerProductPadding">
-                                <a href="./Product_Single_Page.html">
-                                    <div class="Product">
-                                        <!-- discount persentage start -->
-                                        <div class="DisPersent">
-                                            10%
-                                        </div>
-                                        <!-- discount persentage end -->
-    
-                                        <div class="ProductImg">
-                                            <img src="./assets/images/Cooking-Essential/flour1.jpg" alt="">
-                                        </div>
-    
-                                        <div class="productText">
-                                            <div class="NamePrice">
-                                                <p class="Name">
-                                                    Native Organic Papaya
-                                                </p>
-                                                <!-- <br> -->
-                                                <span class="Quantity">
-                                                    In Stock <span>1KG</span>
-                                                </span>
-    
-                                                <div class="Price">
-                                                    <span class="discount">180tk</span>
-                                                    150tk
-                                                </div>
-                                            </div>
-    
-                                            <div class="ProductBtnIncement text-center">
-                                                <div class="Incement">
-                                                    <span class="Plus">+</span>
-                                                    <span>1</span>
-                                                    <span class="Minnus">-</span>
-                                                </div>
-                                                
-                                                <button>
-                                                    add to cart
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
+                            <div class="UnderAll">
+                                <h5>Account Information</h5>
+                                <div class="UlDivMyAcount row">
+                                    <ul class="col-6">
+                                        <li class="tititle">Contact Information</li>
+                                        <li>MD Fahim Patowary</li>
+                                        <li>patowaryfahim3@gmail.com</li>
+                                        <li>
+                                            <a href="#">Edit</a>
+                                            <a href="#">Change Password </a>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="col-6">
+                                        <li class="tititle">Newsletters</li>
+                                        <li>You aren't subscribed to our newsletter.</li>
+                                        <li>
+                                            <a href="#">Edit</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6 moibe-50 carosul Compute-20 PerProductPadding">
-                                <a href="./Product_Single_Page.html">
-                                    <div class="Product">
-                                        <!-- discount persentage start -->
-                                        <div class="DisPersent">
-                                            10%
-                                        </div>
-                                        <!-- discount persentage end -->
+                            <div class="UnderAll UnderAll2">
+                                <h5>Address Book</h5>
+                                <div class="UlDivMyAcount row">
+                                    <ul class="col-6">
+                                        <li class="tititle">Default Billing Address</li>
+                                        <li>You have not set a default billing address.</li>
+                                        <li>
+                                            <a href="#">Edit Address</a>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="col-6">
+                                        <li class="tititle">Default Shipping Address</li>
+                                        <li>You have not set a default shipping address.</li>
+                                        <li>
+                                            <a href="#">Edit Address</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- MY ORDERS -->
+                        <div  class="tab-pane fade" id="Orders" role="tabpanel" aria-labelledby="nav-Orders" tabindex="0">
+                            <h5>MY ORDERS</h5>
+
+                            <div class="OrderList">
+                                <div class="table-responsive ORderResponsive">
+                                    <div class="TableSpan">Data : 2-11-22 <br> Order #631611226493230 </div>
+                                    
+                                    <table class="table table-borderless Oderable">
+                                        <tr>
+                                            <td class="col-1">
+                                                <div class="product-img"><img src="./assets/images/Dairy-Bakery/Chips2.jpg" alt="Image" /></div>
+                                            </td>
     
-                                        <div class="ProductImg">
-                                            <img src="./assets/images/Cooking-Essential/Rice.jpg" alt="">
-                                        </div>
+                                            <td><a href="shop-details.html" class="product-name">White short Checkered</a></td>
     
-                                        <div class="productText">
-                                            <div class="NamePrice">
-                                                <p class="Name">
-                                                    Native Organic Papaya
-                                                </p>
-                                                <!-- <br> -->
-                                                <span class="Quantity">
-                                                    In Stock <span>1KG</span>
-                                                </span>
+                                            <td>
+                                                <span class="price-txt">Tk <span class="main-price">460</span></span>
+                                            </td>
     
-                                                <div class="Price">
-                                                    <span class="discount">180tk</span>
-                                                    150tk
+                                            <td>
+                                                <div class="product-count cart-product-count">
+                                                    <div class="quantity rapper-quantity">
+                                                        <span>Qty:</span> 1
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            </td>
     
-                                            <div class="ProductBtnIncement text-center">
-                                                <div class="Incement">
-                                                    <span class="Plus">+</span>
-                                                    <span>1</span>
-                                                    <span class="Minnus">-</span>
+                                            <td>
+                                                <span class="price-txt">Packaging</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <div class="table-responsive ORderResponsive">
+                                    <div class="TableSpan">Data : 2-11-22 <br> Order #631611226493230 </div>
+                                    
+                                    <table class="table table-borderless Oderable">
+                                        <tr>
+                                            <td class="col-1">
+                                                <div class="product-img"><img src="./assets/images/Cooking-Essential/flour1.jpg" alt="Image" /></div>
+                                            </td>
+    
+                                            <td><a href="shop-details.html" class="product-name">White short Checkered</a></td>
+    
+                                            <td>
+                                                <span class="price-txt">Tk <span class="main-price">460</span></span>
+                                            </td>
+    
+                                            <td>
+                                                <div class="product-count cart-product-count">
+                                                    <div class="quantity rapper-quantity">
+                                                        <span>Qty:</span> 1
+                                                    </div>
                                                 </div>
-                                                
-                                                <button>
-                                                    add to cart
+                                            </td>
+    
+                                            <td>
+                                                <span class="price-txt">Packaging</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                
+
+                                <div class="table-responsive ORderResponsive">
+                                    <div class="TableSpan">Data : 2-11-22 <br> Order #631611226493230 </div>
+                                    
+                                    <table class="table table-borderless Oderable">
+                                        <tr>
+                                            <td class="col-1">
+                                                <div class="product-img"><img src="./assets/images/Cooking-Essential/Rice.jpg" alt="Image" /></div>
+                                            </td>
+    
+                                            <td><a href="shop-details.html" class="product-name">White short Checkered</a></td>
+    
+                                            <td>
+                                                <span class="price-txt">Tk <span class="main-price">460</span></span>
+                                            </td>
+    
+                                            <td>
+                                                <div class="product-count cart-product-count">
+                                                    <div class="quantity rapper-quantity">
+                                                        <span>Qty:</span> 1
+                                                    </div>
+                                                </div>
+                                            </td>
+    
+                                            <td>
+                                                <span class="price-txt">Packaging</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- MY Wishlist -->
+                        <div class="tab-pane fade" id="Wish-List" role="tabpanel" aria-labelledby="nav-Wish-List" tabindex="0">
+                            <h5>MY Wishlist </h5>
+
+                            <div class="OrderList">
+                                <div class="table-responsive ORderResponsive">
+                                    <table class="table table-borderless Oderable">
+                                        <tr>
+                                            <td class="col-1">
+                                                <div class="product-img"><img src="./assets/images/Dairy-Bakery/Powder Milk.jpg" alt="Image" /></div>
+                                            </td>
+    
+                                            <td><a href="shop-details.html" class="product-name">White short Checkered</a></td>
+    
+                                            <td>
+                                                <span class="price-txt">Tk <span class="main-price">460</span></span>
+                                            </td>
+    
+                                            <td>
+                                                <button>Add To Cart</button>
+                                            </td>
+    
+                                            <td>
+                                                <button class="cart-delete WishBTn2">
+                                                    <i class="fa-solid fa-delete-left"></i>
                                                 </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <div class="table-responsive ORderResponsive">
+                                    <table class="table table-borderless Oderable">
+                                        <tr>
+                                            <td class="col-1">
+                                                <div class="product-img"><img src="./assets/images/Dairy-Bakery/Chocolates1.jpg" alt="Image" /></div>
+                                            </td>
+    
+                                            <td><a href="shop-details.html" class="product-name">White short Checkered</a></td>
+    
+                                            <td>
+                                                <span class="price-txt">Tk <span class="main-price">460</span></span>
+                                            </td>
+    
+                                            <td>
+                                                <button>Add To Cart</button>
+                                            </td>
+    
+                                            <td>
+                                                <button class="cart-delete WishBTn2">
+                                                    <i class="fa-solid fa-delete-left"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <div class="table-responsive ORderResponsive">
+                                    <table class="table table-borderless Oderable">
+                                        <tr>
+                                            <td class="col-1">
+                                                <div class="product-img"><img src="./assets/images/Dairy-Bakery/Chips.jpg" alt="Image" /></div>
+                                            </td>
+    
+                                            <td><a href="shop-details.html" class="product-name">White short Checkered</a></td>
+    
+                                            <td>
+                                                <span class="price-txt">Tk <span class="main-price">460</span></span>
+                                            </td>
+    
+                                            <td>
+                                                <button>Add To Cart</button>
+                                            </td>
+    
+                                            <td>
+                                                <button class="cart-delete WishBTn2">
+                                                    <i class="fa-solid fa-delete-left"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Address Book -->
+                        <div class="tab-pane fade" id="Address-Book" role="tabpanel" aria-labelledby="nav-Address-Book" tabindex="0">
+                            <div class="AddressAddbtn">
+                                <h5>Address Book</h5>
+                                <button id="AddAdressBtnO" onclick="FunAddAdressBtnO()"><i class="fa-solid fa-plus" ></i> Add New Address</button>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-6 moibe-50 carosul Compute-20 PerProductPadding">
-                                <a href="./Product_Single_Page.html">
-                                    <div class="Product">
-                                        <!-- discount persentage start -->
-                                        <div class="DisPersent">
-                                            10%
-                                        </div>
-                                        <!-- discount persentage end -->
-    
-                                        <div class="ProductImg">
-                                            <img src="./assets/images/Cooking-Essential/Rice1.jpg" alt="">
-                                        </div>
-    
-                                        <div class="productText">
-                                            <div class="NamePrice">
-                                                <p class="Name">
-                                                    Native Organic Papaya
-                                                </p>
-                                                <!-- <br> -->
-                                                <span class="Quantity">
-                                                    In Stock <span>1KG</span>
-                                                </span>
-    
-                                                <div class="Price">
-                                                    <span class="discount">180tk</span>
-                                                    150tk
-                                                </div>
+                            <!-- Addres Informain From  start -->
+                            <div class="addressInfoFrom">
+                                <form>
+
+                                    <div>
+                                        <label for="name">Name: </label>
+                                        <input type="text" placeholder="">
+                                    </div>
+
+                                    <div>
+                                        <label for="Phone">Phone Number: </label>
+                                        <input type="text" placeholder="">
+                                    </div>
+                                    
+
+                                    <div>
+                                        <label for="country">Address: </label>
+                                        <input type="text" placeholder="">
+                                    </div>
+
+                                    <div class="AddresSubmit">
+                                        <p id="Adressadded">Save Address</p>
+                                        <p class="CalcleAdd" id="Adressadded" onclick="FunaddressInfoFrom()">Cencle</p>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- Addres Informain From  end -->
+
+                            <!-- collected Address star -->
+                            <div class="collectedAddress">
+                                <div class="row">
+                                    <!-- 11111111111 -->
+                                    <div class="AddressBox col-lg-6 col-md-6">
+                                        <div class="BoxADD">
+                                            <div class="AddEdit row">
+                                                <span class="col-10">Digital Marketing Solution (Pvt.) Ltd.</span>
+                                                 <span class="EditAll col-2" onclick="FunAddAdressBtnO()">Edit</span>
                                             </div>
-    
-                                            <div class="ProductBtnIncement text-center">
-                                                <div class="Incement">
-                                                    <span class="Plus">+</span>
-                                                    <span>1</span>
-                                                    <span class="Minnus">-</span>
-                                                </div>
-                                                
-                                                <button>
-                                                    add to cart
-                                                </button>
-                                            </div>
+                                            <span>Mobile: 014****11</span>
+                                            <span>Dhaka,Dhaka - North,Uttara Sector 15,flat:1302; building: 2A(nilanjona), rajuk ouattara Apartment project</span>
+                                            <span class="LocatinType">Office</span>
                                         </div>
                                     </div>
-                                </a>
-                            </div>
-                            
-                            <div class="col-lg-3 col-md-4 col-sm-6 moibe-50 carosul Compute-20 PerProductPadding">
-                                <a href="./Product_Single_Page.html">
-                                    <div class="Product">
-                                        <!-- discount persentage start -->
-                                        <div class="DisPersent">
-                                            10%
+
+                                    <!-- 222222222222 -->
+                                    <div class="AddressBox col-lg-6 col-md-6">
+                                        <div class="BoxADD">
+                                            <div class="AddEdit row">
+                                                <span class="col-10">Digital Marketing Solution (Pvt.) Ltd.</span>
+                                                 <span class="EditAll col-2" onclick="FunAddAdressBtnO()">Edit</span>
+                                            </div>
+                                            <span>Mobile: 014****11</span>
+                                            <span>Dhaka,Dhaka - North,Uttara Sector 15,flat:1302; building: 2A(nilanjona), rajuk ouattara Apartment project</span>
+                                            <span class="LocatinType">Office</span>
                                         </div>
-                                        <!-- discount persentage end -->
+                                    </div>
+                                    
+                                    <!-- 3333333333 -->
+                                    <div class="AddressBox col-lg-6 col-md-6">
+                                        <div class="BoxADD">
+                                            <div class="AddEdit row">
+                                                <span class="col-10">Digital Marketing Solution (Pvt.) Ltd.</span>
+                                                 <span class="EditAll col-2" onclick="FunAddAdressBtnO()">Edit</span>
+                                            </div>
+                                            <span>Mobile: 014****11</span>
+                                            <span>Dhaka,Dhaka - North,Uttara Sector 15,flat:1302; building: 2A(nilanjona), rajuk ouattara Apartment project</span>
+                                            <span class="LocatinType">Office</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 4444444444 -->
+                                    <div class="AddressBox col-lg-6 col-md-6">
+                                        <div class="BoxADD">
+                                            <div class="AddEdit row">
+                                                <span class="col-10">Digital Marketing Solution (Pvt.) Ltd.</span>
+                                                 <span class="EditAll col-2" onclick="FunAddAdressBtnO()">Edit</span>
+                                            </div>
+                                            <span>Mobile: 014****11</span>
+                                            <span>Dhaka,Dhaka - North,Uttara Sector 15,flat:1302; building: 2A(nilanjona), rajuk ouattara Apartment project</span>
+                                            <span class="LocatinType">Office</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- collected Address end -->
+                        </div>
+
+
+                        <!-- EDIT ACCOUNT INFORMATION -->
+                        <div class="tab-pane fade" id="Account-Information" role="tabpanel" aria-labelledby="nav-Account-Information" 
+                                tabindex="0">
+                                <h5>EDIT ACCOUNT INFORMATION </h5>
+                                
+                                <!-- Addres Informain From  start -->
+                            <div class="PasswordEdit">
+                                <form>
+                                    <div>
+                                        <label for="name">Name: </label>
+                                        <input type="text" placeholder="">
+                                    </div>
+
+                                    <div>
+                                        <label for="Phone">Phone Number: </label>
+                                        <input type="text" placeholder="">
+                                    </div>
+
+                                    <!-- 11st check -->
+                                    <div class="CheckBoxDiv" onclick="EmaleChangeFun()">
+                                        <input class="CheckBox" type="checkbox" placeholder="">
+                                        <label for="Phone"> Change Email</label>
+                                    </div>
+
+                                    <!-- 2nd check -->
+                                    <div class="CheckBoxDiv" onclick="PasswordhendlerFun()">
+                                        <input class="CheckBox" type="checkbox" placeholder="">
+                                        <label for="Phone"> Change Password</label>
+                                    </div>
+
+                                    <!-- change Email -->
+                                    <div class="EmailChnage" id="EmaoChange">
+                                        <div>
+                                            <label for="email">Old Email: </label>
+                                            <input type="text" placeholder="">
+                                        </div>
+    
+                                        <div>
+                                            <label for="email">New Email: </label>
+                                            <input type="text" placeholder="">
+                                        </div>   
+                                    
+                                        <div>
+                                            <label for="varification">Verification code: </label>
+                                            <input type="text" placeholder="">
+                                        </div> 
+                                    </div>
+                                    
+                                    <!-- change Email -->
+                                    <div class="EmailChnage" id="PassowardChange">
+                                        <div>
+                                            <label for="email">Old Password: </label>
+                                            <input type="text" placeholder="">
+                                        </div>
+    
+                                        <div>
+                                            <label for="email">New Password: </label>
+                                            <input type="text" placeholder="">
+                                        </div>   
+                                    
+                                        <div>
+                                            <label for="varification">Verification code: </label>
+                                            <input type="text" placeholder="">
+                                        </div> 
+                                    </div>
+
+                                    <div class="AddresSubmit">
+                                        <p id="Adressadded">Save</p>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- Addres Informain From  end -->
+                        </div>
+
+                        <!-- Phayment Mathod-->
+                        <div class="tab-pane fade" id="Payment-Methods" role="tabpanel" aria-labelledby="nav-Payment-Methods" tabindex="0">
+                            <div class="AddressAddbtn">
+                                <h5>Payment Methods</h5>
+                                <button id="addaccoutnByn" onclick="FunAddAccount()">
+                                    <i class="fa-solid fa-plus" ></i> 
+                                    Add New Account
+                                </button>
+                            </div>
+
+                            <!-- account from start -->
+                            <div class="phaymentInfoFrom d-block">
+                                <form>
+                                    <!-- cradit card -->
+                                    <div>
+                                        <div>
+                                            <h3>Credit Card</h3>
+                                        </div>
+
+                                        <div>
+                                            <label>Card Number</label>
+                                            <input type="text" id="creditCardNumber" placeholder="XXXX XXXX XXXX XXXX" />
+                                        </div>
+    
+                                        <div>
+                                            <label>Expiry date</label> 
+                                            <input type="text" id="datepicker" placeholder="MM/YYYY" />
+                                        </div>
                                         
-                                        <div class="ProductImg">
-                                            <img src="./assets/images/Cooking-Essential/Rice2.jpg" alt="">
+                                        <div>
+                                            <label>Security code</label> 
+                                            <input type="number" id="securityCode" placeholder="e.g. 123" />
                                         </div>
-    
-                                        <div class="productText">
-                                            <div class="NamePrice">
-                                                <p class="Name">
-                                                    Native Organic Papaya
-                                                </p>
-                                                <!-- <br> -->
-                                                <span class="Quantity">
-                                                    In Stock <span>1KG</span>
-                                                </span>
-    
-                                                <div class="Price">
-                                                    <span class="discount">180tk</span>
-                                                    150tk
-                                                </div>
-                                            </div>
-    
-                                            <div class="ProductBtnIncement text-center">
-                                                <div class="Incement">
-                                                    <span class="Plus">+</span>
-                                                    <span>1</span>
-                                                    <span class="Minnus">-</span>
-                                                </div>
-                                                
-                                                <button>
-                                                    add to cart
-                                                </button>
-                                            </div>
+                                        
+                                        <div>
+                                            <label>Enter card holder name</label> 
+                                            <input type="text" placeholder="Card holder" />
                                         </div>
                                     </div>
-                                </a>
+
+                                    <!-- PayPal -->
+                                    <div>
+                                        <div>
+                                            <h3>PayPal</h3>
+                                        </div>
+
+                                        <div>
+                                            <label>Email or phone no. that used in paypal</label> 
+                                            <input type="email" name="paypal-id" id="paypalId" placeholder="Email or mobile number" required />
+                                        </div>
+                                    </div>
+
+                                    <!-- Google -->
+                                    <div>
+                                        <div>
+                                            <h3>Google Pay</h3>
+                                        </div>
+
+                                        <div>
+                                            <label>Email or phone no. that used in google payl</label> 
+                                            <input type="email" name="google-Pay-id" id="googlePayId" placeholder="Email or mobile number" required />
+                                        </div>
+                                    </div>
+
+                                    <div class="AddresSubmit">
+                                        <p id="Adressadded">Save Account</p>
+                                        <p class="CalcleAdd">Cencle</p>
+                                    </div>
+                                </form>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- related Product end -->
+                            <!-- account from end -->
 
-        <!-- Banner section start-->
-        <section class="SectionPadding CatagoriPadding BannerPadding productBanner">
-            <div class="container">
-                <!-- <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 BannerDiv">
-                        <div class="BannerImage">
-                            <img src="./assets/images/Banner/Banner.jpg" alt="">
-                        </div>
-                    </div>
+                            <!-- saved acount start -->
+                            <div class="OrderList">
+                                <h6>Account</h6>
+                                
+                                <div class="PaymentAccountsDiv">
+                                    <div class="ImageAndNumber">
+                                        <img src="./Images/Bkash.png" alt="">
+                                        <span>01825*****64</span>
+                                    </div>
 
-                    <div class="col-lg-6 col-md-6 col-sm-6 BannerDiv">
-                        <div class="BannerImage">
-                            <img src="./assets/images/Banner/Banner.jpg" alt="">
-                        </div>
-                    </div>
-                </div> -->
-            
-                <div class="row">
-                    <div class="BannerEihttext">
-                        <img src="./assets/images/carosul/carosul img.webp" class="d-block w-100" alt="...">
-    
-                        <div class="carousel-caption">
-                            <div class="HerosText">
-                                <div class="HerosTextunder">
-                                    <p>Some Representative</p>
-                                    <h5>Shop Fresh Fruits & Organic Food</h5>
-                                    <button>Learn More</button>
+                                    <div class="PaymentDelet">
+                                        <i class="fa-solid fa-delete-left"></i>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- saved acount end -->
                         </div>
+        
+                        <!-- 888888888888 -->
+                        <!-- <div  class="tab-pane fade" id="Product-Reviews" role="tabpanel" aria-labelledby="nav-Product-Reviews" tabindex="0">
+                            888888888 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, accusantium repudiandae possimus, 
+                            iusto tempora aspernatur eaque, commodi veniam minima cupiditate culpa accusamus est tempore? Eligendi pariatur 
+                            eveniet sunt praesentium quas!
+                        </div> -->
+        
+                        <!-- 99999 -->
+                        <!-- <div class="tab-pane fade" id="Newsletter" role="tabpanel" aria-labelledby="nav-Newsletter" tabindex="0">
+                            999999999 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, accusantium repudiandae possimus, 
+                            iusto tempora aspernatur eaque, commodi veniam minima cupiditate culpa accusamus est tempore? Eligendi pariatur 
+                            eveniet sunt praesentium quas!
+                        </div> -->
+
+                        <!-- 5555555555555 -->
+                        <!-- <div  class="tab-pane fade" id="Information" role="tabpanel" aria-labelledby="nav-Information" tabindex="0">
+                            55555555 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, accusantium repudiandae possimus, 
+                            iusto tempora aspernatur eaque, commodi veniam minima cupiditate culpa accusamus est tempore? Eligendi pariatur 
+                            eveniet sunt praesentium quas!
+                        </div> -->
+        
+                        <!-- 101010101010 -->
+                        <!-- <div class="tab-pane fade" id="Downloadable-Products" role="tabpanel" aria-labelledby="Downloadable-Products" tabindex="0">
+                            10101010 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, accusantium repudiandae possimus, 
+                            iusto tempora aspernatur eaque, commodi veniam minima cupiditate culpa accusamus est tempore? Eligendi pariatur 
+                            eveniet sunt praesentium quas!
+                        </div> -->
+
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Banner section end-->
+
+        <!-- user profile end -->
 
         <!-- Footer Start -->
         <footer class="SectionPadding">
@@ -1166,12 +1294,12 @@
             </div>
         </footer>
         <!-- Footer End -->
-         
-        <!-- custom js -->
+
         <script src="./assets/js/app.js"></script>
 
-         <!-- bootstap script -->
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+        <!-- bootstap script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    
     </body>
 </html>
