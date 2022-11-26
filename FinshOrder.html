@@ -16,14 +16,13 @@
         <!-- bootstrap file link -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    
+
         <!-- custom css -->
         <link rel="stylesheet" href="./assets/styles/main.css">
-
+        <link rel="stylesheet" href="./assets/styles/OrderProces.css">
     </head>
 
     <body>
-        
         <!-- Navber Start -->
         <nav>
             <!--Navber For Laptop And Computer -->
@@ -240,6 +239,7 @@
                                                             <li><a href="./Categories.html">Tunics</a></li>
                                                         </ul>
                                                     </div>
+
                                                     <div class="col-lg-4">
                                                         <h4>
                                                             Bed Room Furniture
@@ -258,6 +258,7 @@
                                                             <li><a href="./Categories.html">Wedge Sandals</a></li>
                                                         </ul>
                                                     </div>
+
                                                     <div class="col-lg-4">
                                                         <h4>
                                                             kitchen & Dining
@@ -319,7 +320,7 @@
                                     <li><a href="./Blog.html">Blog</a></li>
                                     <li><a href="./Categories.html">Product</a></li>
                                     <li><a href="./OrderTrakingForm.html">Order Traking</a></li>
-                                    <li><a href="./HotDeals.html">Hot Deals</a></li>
+                                    <li class="HotDeals"><a href="./HotDeals.html">Hot Deals</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -503,165 +504,27 @@
             </div>
         </nav>
         <!-- Navber End -->
-
+        
         <!-- Cart section start -->
         <section class="HerosSection LoginSection">
             <div class="container cartPading2">
                 <div class="row">
-                    <h1 class="CartTitle">Cart List</h1>
-                    <div class="col-lg-8 col-md-12 cartPadding">
-                        <div class="table-wrap revel-table">
-                            <div class="table-responsive">
-                                <table class="table table-borderless">
-                                    <thead>
-                                        <tr>
-                                            <th>Image</th>
-                                            <th>Product Name</th>
-                                            <th>Price</th>
-                                            <th>Quantity</th>
-                                            <th>Total</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="product-img"><img src="./assets/images/Dairy-Bakery/Chocolates1.jpg" alt="Image" /></div>
-                                            </td>
-                                            <td><a href="shop-details.html" class="product-name">White short Checkered</a></td>
-                                            <td>
-                                                <span class="price-txt">Tk <span class="main-price">460</span></span>
-                                            </td>
-                                            <td>
-                                                <div class="product-count cart-product-count">
-                                                    <div class="ProductBtnIncement text-center">
-                                                        <div class="Incement">
-                                                            <span class="Plus">+</span>
-                                                            <span>1</span>
-                                                            <span class="Minnus">-</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <span class="price-txt">Tk <span class="total-price">460</span></span>
-                                            </td>
-                                            <td>
-                                                <button class="cart-delete">
-                                                    <i class="fa-solid fa-delete-left"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="product-img"><img src="./assets/images/Dairy-Bakery/Chips2.jpg" alt="Image" /></div>
-                                            </td>
-                                            <td><a href="shop-details.html" class="product-name">White short Checkered</a></td>
-                                            <td>
-                                                <span class="price-txt">Tk <span class="main-price">320</span></span>
-                                            </td>
-                                            <td>
-                                                <div class="product-count cart-product-count">
-                                                    <div class="ProductBtnIncement text-center">
-                                                        <div class="Incement">
-                                                            <span class="Plus">+</span>
-                                                            <span>1</span>
-                                                            <span class="Minnus">-</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <span class="price-txt">Tk <span class="total-price">320</span></span>
-                                            </td>
-                                            <td>
-                                                <button class="cart-delete">
-                                                    <i class="fa-solid fa-delete-left"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="product-img"><img src="./assets/images/Cooking-Essential/flour.jpg" alt="Image" /></div>
-                                            </td>
-                                            <td><a href="shop-details.html" class="product-name">White short Checkered</a></td>
-                                            <td>
-                                                <span class="price-txt">Tk <span class="main-price">123</span></span>
-                                            </td>
-                                            <td>
-                                                <div class="product-count cart-product-count">
-                                                    <div class="ProductBtnIncement text-center">
-                                                        <div class="Incement">
-                                                            <span class="Plus">+</span>
-                                                            <span>1</span>
-                                                            <span class="Minnus">-</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <span class="price-txt">Tk <span class="total-price">246</span></span>
-                                            </td>
-                                            <td>
-                                                <button class="cart-delete">
-                                                    <i class="fa-solid fa-delete-left"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                    
+                    <div class="single-tab" id="orderCompletedTab">
+                        <div class="check-icon text-center mb-2">
+                            <!-- <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                            </svg> -->
+                            <i class="fa-regular fa-circle-check fa-4x orderSucessColors"></i>
                         </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-12 CostDiv cartPadding">
-                        <div class="CostCart">
-                            <h4>Cart Total</h4>
-                            <div class="AllCost">
-                                <div class="TotalCost">
-                                    <span>Subtotal</span>
-                                    <span>Tk 205</span>
-                                </div>
-                                <div class="TotalCost">
-                                    <span>Shipping</span>
-                                    <span>Free</span>
-                                </div>
-                                <div class="TotalCost">
-                                    <span>Vat/tax</span>
-                                    <span>Tk 20</span>
-                                </div>
-                                <div class="TotalCost">
-                                    <span>Delivery Charge</span>
-                                    <span>Tk 20</span>
-                                </div>
-                            </div>
-                            <div class="TotalCost">
-                                <span>Total</span>
-                                <span>Tk 225</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="ShopBtn">
-                    <div class="btn-box">
-                        <a href="./index.html" class="def-btn">
-                            <i class="fa-solid fa-chevron-left"></i>
-                            Continue Shopping
-                        </a> 
-                    </div>
-
-                    <div class="btn-box">
-                        <a href="./OrderProcessInfo.html" class="def-btn">
-                            Check Out
-                            <i class="fa fa-chevron-right"></i>
-                        </a> 
+                        <div class="order-complete-msg text-center"><h2>Your Order Has Been Completed</h2></div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Cart section end -->
-
+        
         <!-- Footer Start -->
         <footer class="SectionPadding">
             <div class="container Footer">
@@ -696,25 +559,7 @@
                                     </li>
                                 </ul>
                             </div>  
-                            
-                            <!-- <div class="col-lg-2 col-md-4 col-sm-6 moibe-50">
-                                <h5>Campaigns</h5>
-                                <ul>
-                                    <li>
-                                        <a href="./OrderTraking.html">Order Traking</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Pre-Sale</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Bakery</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Outlet</a>
-                                    </li>
-                                </ul>
-                            </div>   -->
-                            
+
                             <div class="col-lg-2 col-md-4 col-sm-6 moibe-50">
                                 <h5>Page</h5>
                                 <ul>
@@ -737,32 +582,6 @@
                             
                             <div class="col-lg-2 col-md-4 col-sm-6 moibe-50">
                                 <h5>Help</h5>
-                                <!-- <ul>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-brands fa-facebook"></i>
-                                            Facebook
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-brands fa-whatsapp"></i>
-                                            What's App
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-regular fa-envelope"></i>
-                                            E-mail
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa-regular fa-comment"></i>
-                                            Contact
-                                        </a>
-                                    </li>
-                                </ul> -->
 
                                 <ul>
                                     <li>
@@ -825,6 +644,7 @@
         </footer>
         <!-- Footer End -->
 
+        <!-- custom js file -->
         <script src="./assets/js/app.js"></script>
 
         <!-- bootstap script -->

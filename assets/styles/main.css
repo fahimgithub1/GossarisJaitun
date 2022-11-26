@@ -1249,7 +1249,6 @@ input:focus,input:hover{
 .OfferPage .DisPersent{
     position: absolute;
     top: 0;
-    z-index: 990;
     top: 2.5px;
 }
 
@@ -2757,6 +2756,12 @@ iframe{
 .SocialLogin div:not(:last-child){
     margin-right: .5rem;
 }
+
+.LoginBtn{
+    color: white !important;
+    width: 100%;
+    height: 100%;
+}
 /* Login page end */
 
 /* SingIn start */
@@ -3103,6 +3108,10 @@ iframe{
 }
 
 /* user profile start */
+.UserProfile{
+    padding-top: 50px;
+}
+
 .MenuDaitels .active{
     background: none;
     color: black;
@@ -3110,13 +3119,7 @@ iframe{
 
 .NavigatinSection{
     padding-top: 2.2rem;
-    /* padding-bottom: 1rem; */
 }
-
-/* .UserMenu div{
-    display: flex;
-    justify-content: center;
-} */
 
 .UserMenu button{
     max-width: auto;
@@ -3132,7 +3135,6 @@ iframe{
 }
 
 .UserMenu .active{
-    border-bottom: 4px solid orange;
     border-left: none;
     color: var(--logoColor-2) !important;
 }
@@ -3225,12 +3227,13 @@ iframe{
 }
 
 .OrderList img{
-    width: 150%;
+    width: 100%;
 }
 
 .ORderResponsive{
     box-shadow: 0 0 3px #dddddd;
     border-radius: 7px;
+    margin-bottom: 0;
 }
 
 .ORderResponsive:not(:last-child){
@@ -3251,10 +3254,11 @@ iframe{
 .OrderList button{
     outline: 0px;
     background-color: var(--logoColor-1);
-    padding: 7px 22px;
+    padding: 5px 15px;
     border: none;
     color: white;
-    border-radius: 5px;
+    border-radius: 22px;
+    font-size: 13px;
 }
 
 .OrderList button:hover{
@@ -3262,15 +3266,15 @@ iframe{
 }
 
 .WishBTn2{
-    border: 1px solid rgba(0, 0, 0, 0) !important;
-    background: #e3e3e3 !important;
-    color: #424141 !important;
-    padding: 2px 10px !important;
+    padding:5px  10px !important;
+    border: 1px solid var(--logoColor-1) !important;
+    background: none !important;
+    color: var(--logoColor-1) !important;
 }
 
 .WishBTn2:hover{
     border: 1px solid var(--logoColor-2) !important;
-    color: #bb0101 !important;
+    color: white !important;
 }
 
 .AddressAddbtn{
@@ -3284,8 +3288,10 @@ iframe{
     outline: none;
     background-color: var(--logoColor-1);
     padding: 5px 10px;
-    border-radius: 7px;
+    border-radius: 23px;
     color: white;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .AddressAddbtn button:hover{
@@ -3349,7 +3355,7 @@ iframe{
     padding: 8px 16px;
     color: white !important;
     font-weight: 500;
-    border-radius: 7px;
+    border-radius: 27px;
     margin-top: 0.5rem;
     cursor: pointer;
     display: inline-block;
@@ -3429,10 +3435,6 @@ iframe{
     color: var(--logoColor-1) !important;
 }
 
-/* .CheckBoxDiv{
-    justify-content: left !;
-} */
-
 .CheckBoxDiv label{
     width: 148px !important;
 }
@@ -3444,8 +3446,6 @@ iframe{
 }
 
 .EmailChnage{
-    /* width: 100% !important;
-     */
      display: block !important;
 }
 
@@ -3461,7 +3461,6 @@ iframe{
 
 .ImageAndNumber{
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     align-items: center;
     display: flex;
 }
@@ -3484,259 +3483,10 @@ iframe{
     color: #af0707;
 }
 
-@media screen and (min-width: 768px) {
-    .UserMenu button{
-        width: 100%;
-    }
-
-    .UserMenu .active {
-        border-left: 4px solid orange;
-        border-bottom: none;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .UserMenu{
-        margin-bottom: 1rem;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    .MenuDaitels {
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-        width: 100%;
-    }
-    .MenuDaitels.tab-content{
-        padding: 0.2rem 5px !important;
-    }    
-    .UserMenu div{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .UserMenu div button{
-        margin-right: 19px;
-        padding-left: 0;
-        text-align: center;
-    }
-
-    .TableSpan{
-        width: 150%;
-    }
-
-    .table-responsive table tr{
-        width: 150%;
-        overflow: scroll;
-        padding: 7px 0;
-    }
-    
-    .OrderList {
-        margin-top: .8rem;
-    }
-
-    .NavigatinSection{
-        padding-bottom: 0;
-    }
-    .UnderAll {
-        margin-top: .8rem;
-    }
-
-    .UlDivMyAcount ul{
-        width: 100%;
-    }
-
-    .MenuDaitels.tab-content .UnderAll h5, 
-    .MenuDaitels.tab-content .active .UnderAll h5{
-        margin-bottom: 0.8rem;
-    }
-
-    .UlDivMyAcount ul:not(:last-child){
-        margin-bottom: .5rem;
-    }
-
-    .collectedAddress,
-    .addressInfoFrom,
-    .PasswordEdit{
-        margin-top: 1rem;
-    }
-
-    .addressInfoFrom div label, .PasswordEdit div label{
-        width: 127px;
-        margin-right: .2rem;
-    }
-
-    .addressInfoFrom input, .PasswordEdit input{
-        height: 29px;
-        width: calc(98% - 137px);
-    }
-
-    .AddresSubmit{
-        margin-bottom: 0 !important;
-    }
-}
-
-@media screen and (max-width: 344px) {
-    .UserMenu div button{
-        margin-right: 5px;
-    }
-}
-
-
-@media screen and (min-width: 1100px) {
-    .NavigatinSection{
-        padding-top: 60px;
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
-
-    #Orders{
-        margin-bottom: .5rem;
-    }
-    
-}
 /* user profile end */
-
-@media screen and (max-width: 992px) {
-    /* .icon-content {
-        width: 50%;
-    } */
-}
-/* order traking page end */
-
-@media screen and (max-width: 1023px) {
-    .PathSuport{
-        padding-top: 20px;
-    }
-
-    .CostDiv{
-        margin-bottom: 40px;
-    }
-
-    .LastFooter{
-        margin-top: 0px;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .Question{
-        margin-bottom: 1.5rem;
-    }
-
-    .suportMain .AnswerDiv{
-        padding: 0;
-    }
-
-    .HelpeSearch .Searchbtn{
-        right: 30px;
-    }
-
-    .AnswerDiv .tab-content {
-        padding-bottom: .7rem !important;
-    }
-
-    .SupportListDiv {
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-    }
-
-    .SupportPertpe{
-        padding: 10px 4px !important;
-    }
-}
-/* support single page ends */
-
-@media screen and (max-width: 767px) {
-    .PerBlogDIvCol{
-        padding: 0 5px;
-    }
-
-    .PerBlogDIvCol:not(:last-child){
-        padding-bottom: 5px;
-    }
-
-    .DaitlesPerDIv{
-        margin-bottom: 1.2rem;
-    }
-
-    .PerBlogDIv:not(:last-child){
-        margin-bottom: 20px;
-    }
-
-    .PathSuportSEcio {
-        margin-bottom: 2rem;
-    }
-
-    .PerBlogDIv img{
-        width: 100%;
-    }
-
-    .PerBlogDIv{
-        padding: 15px;
-        margin-bottom:  1rem;
-        padding-bottom: 25px;
-    }
-
-    .AboutUsLeft{
-        padding: 10px;
-        padding-right: 10px !important;
-    }
-
-    .SupportListDiv h4{
-        margin-bottom: 10px;
-    }
-
-    .SupportPertpe{
-        padding: 10px 11px;
-        margin-bottom: .2rem !important;
-    }
-
-    .HelpeHeros {
-        padding: 24px 0;
-        padding-bottom: 13px !important;
-    }
-
-    .ReolyForm button{
-        border: none;
-        padding: 8px 18px;
-        border-radius: 7px;
-        font-size: 16px;
-    }
-
-    .LoginSection {
-        padding-top: 20px;
-    }
-
-    .ImageSite{
-        padding-top: 23px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .ImageSite img {
-        width: 50%;
-        margin: auto;
-        border-radius: 12px;
-    }
-
-    .RegisterImage img{
-        height: auto;
-    }
-
-    .table-responsive {
-        margin-bottom: 24px;
-    } 
-
-    .CostDiv{
-        margin-bottom: 20px;
-    }
-
-    .LastFooter{
-        margin-top: 0px;
-    }
-}
 /* Blog page End */
-
 /* responsive start */
+
 @media screen and (min-width: 1400px) {
     .ProductDaitlesdiv{
         left: calc((100% - 1200px)/2);
@@ -3759,6 +3509,18 @@ iframe{
     
     .PerServocesDiv .ServicesImg{
         margin: auto;
+        margin-bottom: .5rem;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .NavigatinSection{
+        padding-top: 60px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    #Orders{
         margin-bottom: .5rem;
     }
 }
@@ -3944,6 +3706,26 @@ iframe{
         padding-top: 20px;
         padding-bottom: 0px;
     }
+
+    .PathSuport{
+        padding-top: 20px;
+    }
+
+    .CostDiv{
+        margin-bottom: 40px;
+    }
+
+    .LastFooter{
+        margin-top: 0px;
+    }
+
+    .UserProfile {
+        padding-top: 35px;
+    }
+
+    .MenuDaitels .tab-pane {
+        padding-bottom: 0;
+    }
 }
 
 /* for tabe uneversal */
@@ -4017,6 +3799,16 @@ iframe{
     
     .ReolyForm{
         margin-bottom: 0px !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .UserMenu button{
+        width: 100%;
+    }
+
+    .UserMenu .active {
+        border-bottom: none;
     }
 }
 
@@ -4205,6 +3997,186 @@ iframe{
         padding-left: 4px;
         padding-right: 4px;
     }
+    
+    .UserMenu{
+        margin-bottom: 1rem;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .MenuDaitels {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        width: 100%;
+    }
+
+    .MenuDaitels.tab-content{
+        padding: 0.2rem 5px !important;
+    } 
+
+    .UserMenu div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .UserMenu div button{
+        margin-right: 19px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .TableSpan{
+        width: 150%;
+    }
+
+    .table-responsive table tr{
+        width: 150%;
+        overflow: scroll;
+        padding: 7px 0;
+    }
+    
+    .OrderList {
+        margin-top: .8rem;
+    }
+
+    .NavigatinSection{
+        padding-bottom: 0;
+    }
+    .UnderAll {
+        margin-top: .8rem;
+    }
+
+    .UlDivMyAcount ul{
+        width: 100%;
+    }
+
+    .MenuDaitels.tab-content .UnderAll h5, 
+    .MenuDaitels.tab-content .active .UnderAll h5{
+        margin-bottom: 0.8rem;
+    }
+
+    .UlDivMyAcount ul:not(:last-child){
+        margin-bottom: .5rem;
+    }
+
+    .collectedAddress,
+    .addressInfoFrom,
+    .PasswordEdit{
+        margin-top: 1rem;
+    }
+
+    .addressInfoFrom div label, .PasswordEdit div label{
+        width: 127px;
+        margin-right: .2rem;
+    }
+
+    .addressInfoFrom input, .PasswordEdit input{
+        height: 29px;
+        width: calc(98% - 137px);
+    }
+
+    .AddresSubmit{
+        margin-bottom: 0 !important;
+    }
+
+    .PerBlogDIvCol{
+        padding: 0 5px;
+    }
+
+    .PerBlogDIvCol:not(:last-child){
+        padding-bottom: 5px;
+    }
+
+    .DaitlesPerDIv{
+        margin-bottom: 1.2rem;
+    }
+
+    .PerBlogDIv:not(:last-child){
+        margin-bottom: 20px;
+    }
+
+    .PathSuportSEcio {
+        margin-bottom: 2rem;
+    }
+
+    .PerBlogDIv img{
+        width: 100%;
+    }
+
+    .PerBlogDIv{
+        padding: 15px;
+        margin-bottom:  1rem;
+        padding-bottom: 25px;
+    }
+
+    .AboutUsLeft{
+        padding: 10px;
+        padding-right: 10px !important;
+    }
+
+    .SupportListDiv h4{
+        margin-bottom: 10px;
+    }
+
+    .SupportPertpe{
+        padding: 10px 11px;
+        margin-bottom: .2rem !important;
+    }
+
+    .HelpeHeros {
+        padding: 24px 0;
+        padding-bottom: 13px !important;
+    }
+
+    .ReolyForm button{
+        border: none;
+        padding: 8px 18px;
+        border-radius: 7px;
+        font-size: 16px;
+    }
+
+    .LoginSection {
+        padding-top: 20px;
+    }
+
+    .ImageSite{
+        padding-top: 23px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ImageSite img {
+        width: 50%;
+        margin: auto;
+        border-radius: 12px;
+    }
+
+    .RegisterImage img{
+        height: auto;
+    }
+
+    .table-responsive {
+        margin-bottom: 24px;
+    } 
+
+    .CostDiv{
+        margin-bottom: 20px;
+    }
+
+    .LastFooter{
+        margin-top: 0px;
+    }
+
+    .MenuDaitels .tab-content{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .ORderResponsive{
+        margin-bottom: 10px !important;
+        padding-bottom: 5px;
+    }
 }
 
 @media screen and (max-width: 1023px) and (min-width: 685px){
@@ -4281,6 +4253,31 @@ iframe{
 }
 
 @media screen and (max-width: 575px) {
+    .Question{
+        margin-bottom: 1.5rem;
+    }
+
+    .suportMain .AnswerDiv{
+        padding: 0;
+    }
+
+    .HelpeSearch .Searchbtn{
+        right: 30px;
+    }
+
+    .AnswerDiv .tab-content {
+        padding-bottom: .7rem !important;
+    }
+
+    .SupportListDiv {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .SupportPertpe{
+        padding: 10px 4px !important;
+    }
+
     .ProductImg {
         height: 150px;
     }
@@ -4362,6 +4359,16 @@ iframe{
     .CartTitle {
         margin-bottom: 21px;
     }
+
+    .MenuDaitels .tab-pane{
+        padding-left: 7px;
+        padding-right: 7px;
+        padding-bottom: 0;
+    }
+
+    .UserProfile {
+        padding-top: 20px;
+    }
 }
 
 @media screen and (max-width: 599px) {
@@ -4391,6 +4398,12 @@ iframe{
         width: 135px;
         text-align: center;
         margin: 0;
+    }
+}
+
+@media screen and (max-width: 344px) {
+    .UserMenu div button{
+        margin-right: 5px;
     }
 }
 
