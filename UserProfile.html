@@ -579,7 +579,7 @@
                             <h5>MY ACCOUNT</h5>
 
                             <div class="UnderAll">
-                                <h5>Account Information</h5>
+                                <!-- <h5>Account Information</h5> -->
                                 <div class="UlDivMyAcount row">
                                     <ul class="col-6">
                                         <li class="tititle">Contact Information</li>
@@ -602,7 +602,7 @@
                             </div>
 
                             <div class="UnderAll UnderAll2">
-                                <h5>Address Book</h5>
+                                <!-- <h5>Address Book</h5> -->
                                 <div class="UlDivMyAcount row">
                                     <ul class="col-6">
                                         <li class="tititle">Default Billing Address</li>
@@ -849,7 +849,8 @@
                                     <div class="AddressBox col-lg-6 col-md-6">
                                         <div class="BoxADD">
                                             <div class="AddEdit row">
-                                                <span class="col-10">Digital Marketing Solution (Pvt.) Ltd.</span>
+                                                <input type="checkbox" class="AddressBoolRadio">
+                                                <span class="col-9 radioSide">Digital Marketing Solution (Pvt.) Ltd.</span>
                                                  <span class="EditAll col-2" onclick="FunAddAdressBtnO()">Edit</span>
                                             </div>
                                             <span>Mobile: 014****11</span>
@@ -862,7 +863,8 @@
                                     <div class="AddressBox col-lg-6 col-md-6">
                                         <div class="BoxADD">
                                             <div class="AddEdit row">
-                                                <span class="col-10">Digital Marketing Solution (Pvt.) Ltd.</span>
+                                                <input type="checkbox" class="AddressBoolRadio">
+                                                <span class="col-9 radioSide">Digital Marketing Solution (Pvt.) Ltd.</span>
                                                  <span class="EditAll col-2" onclick="FunAddAdressBtnO()">Edit</span>
                                             </div>
                                             <span>Mobile: 014****11</span>
@@ -875,7 +877,8 @@
                                     <div class="AddressBox col-lg-6 col-md-6">
                                         <div class="BoxADD">
                                             <div class="AddEdit row">
-                                                <span class="col-10">Digital Marketing Solution (Pvt.) Ltd.</span>
+                                                <input type="checkbox" class="AddressBoolRadio">
+                                                <span class="col-9 radioSide">Digital Marketing Solution (Pvt.) Ltd.</span>
                                                  <span class="EditAll col-2" onclick="FunAddAdressBtnO()">Edit</span>
                                             </div>
                                             <span>Mobile: 014****11</span>
@@ -888,7 +891,8 @@
                                     <div class="AddressBox col-lg-6 col-md-6">
                                         <div class="BoxADD">
                                             <div class="AddEdit row">
-                                                <span class="col-10">Digital Marketing Solution (Pvt.) Ltd.</span>
+                                                <input type="checkbox" class="AddressBoolRadio">
+                                                <span class="col-9 radioSide">Digital Marketing Solution (Pvt.) Ltd.</span>
                                                  <span class="EditAll col-2" onclick="FunAddAdressBtnO()">Edit</span>
                                             </div>
                                             <span>Mobile: 014****11</span>
@@ -980,14 +984,14 @@
                         <div class="tab-pane fade" id="Payment-Methods" role="tabpanel" aria-labelledby="nav-Payment-Methods" tabindex="0">
                             <div class="AddressAddbtn">
                                 <h5>Payment Methods</h5>
-                                <button id="addaccoutnByn" onclick="FunAddAccount()">
+                                <button id="addaccoutnByn" onclick="AddPhyment()">
                                     <i class="fa-solid fa-plus" ></i> 
                                     Add New Account
                                 </button>
                             </div>
 
                             <!-- account from start -->
-                            <div class="phaymentInfoFrom d-block">
+                            <div class="phaymentInfoFrom PaymentFrom" id="PaymentFrom">
                                 <form>
                                     <!-- cradit card -->
                                     <div>
@@ -1042,7 +1046,7 @@
 
                                     <div class="AddresSubmit">
                                         <p id="Adressadded">Save Account</p>
-                                        <p class="CalcleAdd">Cencle</p>
+                                        <p class="CalcleAdd" onclick="AddPhymenthide()">Cencle</p>
                                     </div>
                                 </form>
                             </div>
@@ -1054,7 +1058,7 @@
                                 
                                 <div class="PaymentAccountsDiv">
                                     <div class="ImageAndNumber">
-                                        <img src="./Images/Bkash.png" alt="">
+                                        <img src="./assets/images/icon/Bkash.png" alt="">
                                         <span>01825*****64</span>
                                     </div>
 
@@ -1115,24 +1119,6 @@
                                 </ul>
                             </div>  
                             
-                            <!-- <div class="col-lg-2 col-md-4 col-sm-6 moibe-50">
-                                <h5>Campaigns</h5>
-                                <ul>
-                                    <li>
-                                        <a href="./OrderTraking.html">Order Traking</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Pre-Sale</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Bakery</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Outlet</a>
-                                    </li>
-                                </ul>
-                            </div>   -->
-                            
                             <div class="col-lg-2 col-md-4 col-sm-6 moibe-50">
                                 <h5>Page</h5>
                                 <ul>
@@ -1143,7 +1129,7 @@
                                         <a href="./ReturnPolicy.html">Return Policy</a>
                                     </li>
                                     <li>
-                                        <a href="OrderTraking.html">Order Traking</a>
+                                        <a href="./OrderTrakingForm.html">Order Traking</a>
                                     </li>
                                     <li>
                                         <a href="./MissionAndVision.html">

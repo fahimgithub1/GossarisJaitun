@@ -79,3 +79,14 @@ showYear.innerHTML = year
         collectedAddressA.style.display = "block";
         addressInfoFrom.style.display = "none";
     }
+
+    // add pyment function
+    function AddPhyment(){
+        let PaymentFromq = document.getElementById("PaymentFrom");
+        PaymentFromq.style.display = "block";
+    }
+
+    function AddPhymenthide(){
+        let PaymentFrom = document.getElementById("PaymentFrom");
+        PaymentFrom.style.display = "none";
+    }

@@ -693,10 +693,30 @@ input:focus,input:hover{
 
 .HotDeals{
     height: 100%;
-    background: linear-gradient(28deg, #920d03, #de7d2d);
+    background: linear-gradient(-28deg, #920d03, #de7d2d);
     padding: 10px;
     border: 1px solid #920d03;
     margin-top: -1px;
+    animation: gradient 5s  infinite alternate linear;
+    transition: all 5s;
+}
+
+@keyframes gradient {
+    0% {
+		background: linear-gradient(-28deg, #e71303, #de7d2d);
+
+        transition: all 5s;
+	}
+	50% {
+		background: linear-gradient(50deg, rgb(170, 17, 17), #de7d2d);
+
+        transition: all 5s;
+	}
+	100% {
+		background: linear-gradient(28deg, #920d03, #ff7300);
+
+        transition: all 5s;
+	}
 }
 /* nav for tabe and mobile end */
 /* navigatin end */
@@ -899,6 +919,10 @@ input:focus,input:hover{
 .PerServocesDiv{
     margin-bottom: 0.3rem;
     align-items: center;
+}
+
+.PerServocesDiv:not(:last-child){
+    border-right: 1px solid black;
 }
 
 .PerServocesDiv .Freeshoping{
@@ -2659,6 +2683,7 @@ iframe{
 .ImageSite img{
     height: 100%;
     width: 100%;
+    border-radius: 12px;
 }
 
 .FromSite{
@@ -3313,7 +3338,6 @@ iframe{
     text-align: center
 }
 
-
 .addressInfoFrom div,
 .phaymentInfoFrom div div,
 .PasswordEdit div{
@@ -3376,6 +3400,18 @@ iframe{
     line-height: 16px;
 }
 
+.displayblock{
+    display: block;
+}
+
+#PaymentFrom{
+    display: none;
+}
+
+.displayblock{
+    display: block ;
+}
+
 .collectedAddress{
     font-size: 13px;
     padding: 5px;
@@ -3401,6 +3437,17 @@ iframe{
 .AddressBox span{
     display: block;
     margin-bottom: .3rem;
+}
+
+.AddressBoolRadio{
+    height: 15px;
+    width: 15px;
+    margin-top: 2px;
+    border-radius: 50%;
+}
+
+.radioSide{
+    padding-left: 0;
 }
 
 .LocatinType{
@@ -3501,16 +3548,6 @@ iframe{
     .OfferPage .Product{
         margin-bottom: 20px;
     }
-    
-    .PerServocesDiv .Freeshoping{
-        margin: auto;
-        margin-bottom: .5rem;
-    }
-    
-    .PerServocesDiv .ServicesImg{
-        margin: auto;
-        margin-bottom: .5rem;
-    }
 }
 
 @media screen and (min-width: 1100px) {
@@ -3568,20 +3605,6 @@ iframe{
 
     .VagetableSection{
         padding-top: 23px;
-    }
-
-    .PerServocesDiv{
-        display: flex;
-        align-items: start;
-    }
-
-    .PerServocesDiv .Freeshoping{
-        max-width: min-content;
-        margin: none;
-    }
-
-    .ServicesText{
-        text-align: left;
     }
 }
 
@@ -3809,6 +3832,20 @@ iframe{
 
     .UserMenu .active {
         border-bottom: none;
+    }
+    
+    .PerServocesDiv .Freeshoping{
+        margin: auto;
+        margin-bottom: .5rem;
+    }
+    
+    .PerServocesDiv .ServicesImg{
+        margin: auto;
+        margin-bottom: .5rem;
+    }
+
+    .PerServocesDiv {
+        width: 20%;
     }
 }
 
@@ -4177,6 +4214,25 @@ iframe{
         margin-bottom: 10px !important;
         padding-bottom: 5px;
     }
+    
+
+    .PerServocesDiv{
+        display: flex;
+        align-items: start;
+    }
+
+    .PerServocesDiv .Freeshoping{
+        max-width: min-content;
+        margin: none;
+    }
+
+    .ServicesText{
+        text-align: left;
+    }
+
+    .PerServocesDiv3rd{
+        border: none !important;
+    }
 }
 
 @media screen and (max-width: 1023px) and (min-width: 685px){
@@ -4368,6 +4424,15 @@ iframe{
 
     .UserProfile {
         padding-top: 20px;
+    }
+
+    .PerServocesDiv{
+        border-right: none !important;
+    }
+
+    .PerServocesDiv:not(:last-child){
+        border-bottom: 1px solid rgb(151, 151, 151);
+        margin-bottom: .5rem;
     }
 }
 
