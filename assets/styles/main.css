@@ -1234,10 +1234,7 @@ input:focus,input:hover{
         width: 40px;
         background-color: var(--logoColor-1);
         color: white;
-    }
-    
-    .container.ProductContiner{
-        margin-bottom: 20px;
+        z-index: 10;
     }
 /* vegetabels section end */
 
@@ -1503,13 +1500,17 @@ footer ul li{
 
 .LastFooter{
     color: #979797;
-    margin-bottom: 16px;
-    margin-top: 36px;
+    margin-bottom: 0px;
+    margin-top: 24px;
     padding-top: 0 !important;
 }
 
 .LastFooter a{
     color: #979797;
+}
+
+.LastFooter p{
+    margin-bottom: 7px;
 }
 /* footer end */
 
