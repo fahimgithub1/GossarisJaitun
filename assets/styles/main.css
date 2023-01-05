@@ -1620,7 +1620,8 @@ footer ul li{
 }
 
 .ProductBtn button:not(:last-child){
-    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+
 }
 
 .CataTagId {
@@ -1894,6 +1895,35 @@ footer ul li{
         padding-right: 5%;
     }
     /* banner end */
+
+.sideProduct:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.sideProduct .ProductImg{
+    height: 150px;
+    margin-bottom: 5px;
+}
+
+.sideProduct .productText .Price{
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    margin-right: .5rem;
+    font-weight: 600;
+}
+
+.sideProduct .productText .ProductBtnIncement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideProduct .productText .ProductBtnIncement button{
+    margin-bottom: 0.5rem;
+    margin-top: 0.2rem;
+    font-size: 14px;
+    padding: 5px 15px;
+}
 /* product page end */
 
 /* Catagoirs Page start */
