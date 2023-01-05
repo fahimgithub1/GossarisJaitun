@@ -1321,14 +1321,13 @@ input:focus,input:hover{
 
 .LastWeekText .WeeKPara2{
     margin-bottom: 1.5rem;
-
 }
 
 .LastWeekText button{
-    font-weight: 500;
-    padding: 6px 41px;
     color: black;
     background: none;
+    font-weight: 500;
+    padding: 6px 41px;
     border: 4px solid #de7d2d;
 }
 
@@ -1344,6 +1343,35 @@ input:focus,input:hover{
     overflow: hidden;
     padding: 1px;
     background-color: white;
+}
+
+.LastWeekTextCrosul .ProductImg{
+    height: 165px;
+    margin-bottom: 2px;
+}
+
+.LastWeekTextCrosul .NamePrice .Price{
+    margin-top: 0;
+    margin-bottom: .4rem;
+}
+
+.LastWeekTextCrosul .ProductBtnIncement .Incement{
+    margin-top: 0;
+    margin-bottom: .4rem;
+    height: 33px;
+}
+
+.LastWeekTextCrosul .ProductBtnIncement .Incement .Plus, 
+.LastWeekTextCrosul .ProductBtnIncement .Incement .Minnus{
+    height: 27px;
+    width: 27px;
+    font-size: 19px;
+}
+
+.LastWeekTextCrosul .ProductBtnIncement button{
+    font-size: 13px;
+    padding: 6px 13px;
+    margin-bottom: .5rem;
 }
 
 .LastWeekProducr{
