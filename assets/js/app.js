@@ -1,3 +1,10 @@
+function juice_img(image){
+    let main_img = document.querySelector('.main').src = image;
+}
+// function juice_img(image){
+//     let main_img = document.querySelector('.main').src = image;
+// }
+
 // for showing catagoris in phone
 let NavCaragoris = document.querySelector(".NavCaragoris");
     

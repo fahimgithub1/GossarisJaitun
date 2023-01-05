@@ -393,13 +393,12 @@ input:focus,input:hover{
 
 /* Bootom Navbar start*/
 .BottomNev{
-    /* border-bottom: 2px solid var(--logoColor-2); */
-    background-color: var(--logoColor-2) !important;
+    background-color: var(--logoColor-1) !important;
     z-index: 999;
 }
 
 .DestopNavCtagoris{
-    background-color: var(--logoColor-1);
+    background-color: var(--logoColor-2);
     justify-content: space-between;
     padding: 10px 12px;
     color: white;
@@ -415,7 +414,7 @@ input:focus,input:hover{
     display: flex;
     align-items: center;
     padding-left: 35px;
-    background-color: var(--logoColor-2);
+    background-color: var(--logoColor-1);
 }
 
 .horizontal-menu ul li{
@@ -1515,13 +1514,9 @@ footer ul li{
 /* footer end */
 
 /* product page start */
-.mainProdictDiv{
-    /* height: min-content; */
-}
 .ProductBg{
     height: 550px;
     width: 100%;
-    /* background-color: red; */
     background-image: url(../images/procuctbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1530,18 +1525,8 @@ footer ul li{
     overflow: hidden;
     z-index: -1;
 }
-.BgBlack{
-    position: absolute;
-    height: 550px;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding-top: 30px;
-    background-color: rgba(0, 0, 0, 0.479);
-    overflow: visible;
-}
-.ProductBg h1{
-    /* margin-top: 20px; */
+
+.productBg h1{
     max-width: 425px;
     margin: auto;
     text-align: center;
@@ -1552,34 +1537,11 @@ footer ul li{
     padding-top: 40px;
 }
 
-/* .mainProdictDiv{
-    height: auto;
-    position: relative ;
-    overflow: visible;
-} */
-
-/* .ProductDaitlesdiv{
-    max-width: 1200px;
-    width: 80%;
-    margin: auto;
-    position: absolute;
-    top: 400px;
-    left: 10%;
-    background-color: var(--section-bg);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: rgb(207 207 207) 0px 0px 5px;
-} */
-
 .ProductDaitlesdiv{
-    max-width: 1200px;
-    width: 85%;
-    margin: auto;
     background-color: var(--section-bg);
     padding: 20px;
     border-radius: 12px;
     box-shadow: rgb(207 207 207) 0px 0px 5px;
-    margin-top: -319px;
 }
 
 .ProductDaitlesdiv img{
@@ -1764,7 +1726,6 @@ footer ul li{
     .tab-content .tab-pane{
         padding: 20px ;
         border-radius: 10px;
-        /* height: 450px; */
         border-top: 1px solid rgb(219, 213, 213);
     }
 
@@ -1873,12 +1834,6 @@ footer ul li{
     }
     /* tabe review and disciption end */
 
-    /* reated product section start */
-    .RelatedProdSec{
-        /* margin-top: 660px; */
-    }
-    /* reated product section end */
-
     /* banner start */
     .BannerEihttext{
         position: relative;
@@ -1923,6 +1878,56 @@ footer ul li{
     margin-top: 0.2rem;
     font-size: 14px;
     padding: 5px 15px;
+}
+
+.panel-body img {
+    width: 23%;
+    max-width: 66px;
+    margin-bottom: 10px;
+}
+
+.PeoudctBigImgage{
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.PeoudctBigImgage img{
+    height: 100% !important;
+    max-height: 100%;
+}
+
+.AnotherImg{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.AnotherImg img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.AnotherImg img:not(:last-child){
+    margin-right: .5rem;
+}
+
+.ChargeDiv{
+    background-color: white;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.ChargeDiv .title{
+    margin-bottom: 15px;
+    color: var(--cartColor);
+    padding-bottom: 15px;
+    border-bottom: 2px solid;
+}
+
+.ChargeDiv .panel-body p{
+    margin-bottom: 10px;
 }
 /* product page end */
 
@@ -3565,12 +3570,6 @@ iframe{
 /* Blog page End */
 /* responsive start */
 
-@media screen and (min-width: 1400px) {
-    .ProductDaitlesdiv{
-        left: calc((100% - 1200px)/2);
-    }
-}
-
 @media screen and (min-width: 1200px) {
     .Compute-20{
         width: 20%;
@@ -3636,6 +3635,10 @@ iframe{
 
     .VagetableSection{
         padding-top: 23px;
+    }
+
+    .PeoudctBigImgage {
+        height: 233px;
     }
 }
 
@@ -3784,12 +3787,6 @@ iframe{
 
 /* for tabe uneversal */
 @media screen and (max-width: 962px) and (min-width: 601px) {
-    .ProductDaitlesdiv{
-        width: 94%;
-        /* left: 3%; */
-        top: 320px;
-    }
-
     .ProductBtn button {
         width: 167px;
         font-size: 16px;
@@ -3853,6 +3850,14 @@ iframe{
     
     .ReolyForm{
         margin-bottom: 0px !important;
+    }
+
+    .RightRelated{
+        display: none;
+    }
+
+    .ReviewAndDis{
+        margin-bottom: 15px;
     }
 }
 
@@ -3951,12 +3956,6 @@ iframe{
     footer{
         margin-top: 20px;
     }
-
-    .ProductDaitlesdiv{
-        width: 100%;
-        top: 320px;
-    }
-
     .mainProdictDiv{
         padding: 0;
     }
@@ -4387,7 +4386,6 @@ iframe{
     }
 
     .ProductDaitlesdiv{
-        margin-top: -73px;
         border-radius: 9px;
         padding: 7px;
     }
