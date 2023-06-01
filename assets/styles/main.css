@@ -2286,6 +2286,7 @@ footer ul li{
     border-radius: 10px;
     height: min-content;
     font-size: 18px;
+    border: 1px solid #920d03;
 }
 
 .PerBlogDIvCol:not(:last-child){
@@ -2337,9 +2338,14 @@ footer ul li{
 .PerBlogDIv .BlogDatilsL{
     border: none;
     outline: none;
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-    color: var(--logoColor-1);
+    text-transform: capitalize;
+    display: inline-block;
+    background-color: var(--logoColor-1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .PerBlogDIv .BlogDatilsL:hover{
@@ -2358,7 +2364,6 @@ footer ul li{
 
 /* Blog Daitles start */
 .DaitlesPerDIv {
-    max-width: 850px;
     margin: auto;
 }
 
@@ -2533,6 +2538,10 @@ footer ul li{
 
 .BlogMainSection .AboutUsLeft{
     margin-bottom: 0px;
+}
+
+.AboutUsLeft .row{
+    max-width: 100%;
 }
 /* Blog Daitles end */
 
@@ -3726,8 +3735,8 @@ iframe{
     }
 
     .container {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     .ProductContiner{
@@ -3810,6 +3819,10 @@ iframe{
 
     .MenuDaitels .tab-pane {
         padding-bottom: 0;
+    }
+
+    footer{
+        margin-bottom: 20px;
     }
 }
 
@@ -3914,12 +3927,70 @@ iframe{
 }
 
 @media screen and (max-width: 767px) {
+    .ShowCatagoritStapes{
+        padding: 10px 0;
+    }
+    .BlogMainSection .AboutUsLeft{
+        padding: 0 !important;
+    }
+    .MainCatagoriDiv {
+        padding-top: 25px;
+    }
+    .BlogMainSection .AboutUsRightRM {
+        padding: 0;
+        margin-top: 5px !important;
+        margin-bottom: 0px;
+    }
+    .BlogBnnar{
+        margin-bottom: -10px;
+    }
+    .CampaignsBannerBotom {
+        padding-top: 5px;
+    }
+    .BlogBtn .button {
+        display: inline-block;
+        width: 150px;
+        font-weight: 600;
+    }
+    .ReolyForm {
+        margin-top: .5rem;
+    }
+    .AboutProvide {
+        margin-top: 3px;
+        padding-bottom: 10px;
+        margin-bottom: -20px !important;
+    }
+    .TermsAndCond{
+        margin-bottom: -20px !important;
+    }
+    .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
     .SectionPadding{
         padding-top: 20px;
     }
 
     .CatagorySection {
-        padding-top: 20px;
+        padding-top: 7px;
+    }
+
+    .LestWeekBG{
+        padding-top: 7px;
+    }
+
+    .LastWeekTextCrosul .ProductImg {
+        height: 219px;
+    }
+
+    .ProductContiner .FoductList {
+        padding-bottom: 0;
+    }
+
+    .ProductContiner .FoductList{
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .Titelh4 {
@@ -4200,7 +4271,7 @@ iframe{
     }
 
     .PerBlogDIv{
-        padding: 15px;
+        padding: 10px;
         margin-bottom:  1rem;
         padding-bottom: 25px;
     }
@@ -4232,7 +4303,10 @@ iframe{
     }
 
     .LoginSection {
-        padding-top: 20px;
+        padding-top: 0px;
+    }
+    .HerosSection {
+        margin-top: 63px;
     }
 
     .ImageSite{
@@ -4290,6 +4364,20 @@ iframe{
 
     .PerServocesDiv3rd{
         border: none !important;
+    }
+
+    .mobilePadding{
+        padding: 0 12px;
+        border-radius: 0;
+    }
+
+    .ProductDaitlesdiv {
+        border-radius: 9px;
+        padding: 15px !important;
+    }
+    
+    footer{
+        margin-bottom: 20px !important;
     }
 }
 
@@ -4434,7 +4522,8 @@ iframe{
     }
 
     .AboutUsRight{
-        margin-bottom: -18px;
+        margin-bottom: -8px;
+        padding: 0;
     }
 
     .RightPerDiv {
